@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+  <!--- HEAD --->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<meta name="theme-color" content="#000000">-->
+    <meta name="description" content="Quality Evaluation Framework was created in the context of a Computer Science PhD thesis from NOVA LINCS, Universidade NOVA de Lisboa.">
+    <meta name="author" content="Catarina Gralha">
+
+    <meta property="og:title" content="Quality Evaluation Framework" />
+    <!--<meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="">
+    <meta property="og:image" content="images/gear.png" />-->
+
+    <link rel="icon" href="../images/favicon.ico">
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../fontawesome/css/all.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link href="../css/nasaTLX.css" rel="stylesheet">
+
+    <script src="../js/nasaTLX.js"></script>
+
+    <title>Quality Evaluation Framework</title>
+  </head>
+  <!--- \ HEAD --->
+
+
+  <!--- BODY --->
+  <body class="lessPadding" onLoad="onLoad();">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h5 style="text-align: center;">NASA Task Load Index</h5>
+          <div class="card bg-light">
+            <div class="card-body">
+
+              <div id="part0">
+                <p>
+                  The following assessment is used to measure your personal opinion on how much workload was required of you during the task you just completed. <br/><br/>
+
+              	  In this assessment, you will first be asked to rate 6 workload measures. <br/><br/>
+
+              	  After you have completed the ratings, you will be asked to compare which of two workload measure is more important than the other when considering the task you just completed. You will be asked to answer 15 of these pairings. <br/><br/>
+
+              	  <b>There is no right or wrong answer.</b><br/>
+                </p>
+              </div>
+
+              <div id="part1" style="display:none">
+
+                <h5>Workload measures</h5>
+                <p>Click on each scale at the point that best indicates your experience with the task</p>
+
+                <div style="text-align: center;">
+                  <div id="scale0"></div>
+                  <div id="scale1"></div>
+                  <div id="scale2"></div>
+                  <div id="scale3"></div>
+                  <div id="scale4"></div>
+                  <div id="scale5"></div>
+                </div>
+              </div>
+
+              <div id="part2" style="display:none">
+                <h5>Compare two workload measures</h5>
+                <p>One each of the following 15 screens, click on the scale title that represents the more important contributor to workload for the task</p>
+              </div>
+
+              <div id="part3" style="display:none">
+                <h5>Compare two workload measures</h5>
+                <p>Click on the factor that represents the more important contributor to workload for the task</p>
+                <table>
+                  <tr>
+                    <td><input class="pair" id="pair1" type="button" value="" onClick="buttonPair1();"> </td>
+                    <td class="def"><div id="pair1_def"></div></td>
+                  </tr>
+                  <tr>
+                    <td align="center"> or </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><input class="pair" id="pair2" type="button" value="" onClick="buttonPair2();"></td>
+                    <td class="def"><div id="pair2_def"></div></td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+          <br/>
+          <button type="submit" class="btn btn-info" id="buttonPart0" onClick="buttonPart0();">Start</button>
+          <button type="submit" class="btn btn-info" id="buttonPart1" style="display:none" onClick="buttonPart1();">Continue</button>
+          <button type="submit" class="btn btn-info" id="buttonPart2" style="display:none" onClick="buttonPart2();">Continue</button>
+        </div>
+      </div>
+    </div>
+
+  </body>
+  <!--- \ BODY --->
+
+
+</html>

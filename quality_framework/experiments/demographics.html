@@ -1,0 +1,912 @@
+<!doctype html>
+<html lang="en">
+
+  <!--- HEAD --->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Quality Evaluation Framework was developed in the context of a Computer Science PhD thesis from NOVA LINCS, Universidade NOVA de Lisboa.">
+    <meta name="author" content="Catarina Gralha">
+
+    <meta property="og:title" content="Quality Evaluation Framework" />
+    <meta property="og:site_name" content="Quality Evaluation Framework" />
+    <meta property="og:description" content="This framework helps in the quality evaluation of requirements models. For now, it covers i*, iStar 2.0 and Use Cases" />
+    <meta property="og:image" content="images/gear.png" />
+    <!--<meta property="og:url" content="">-->
+
+    <link rel="icon" href="../images/favicon.ico">
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link href="../css/demographics.css" rel="stylesheet">
+    <link href="../fontawesome/css/all.css" rel="stylesheet">
+
+    <script src="../js/demographics.js"></script>
+    <script src="../js/genderMag.js"></script>
+
+    <title>Quality Evaluation Framework</title>
+  </head>
+  <!--- \ HEAD --->
+
+
+  <!--- BODY --->
+  <body class="lessPadding">
+
+    <div class="container">
+      <div class="row">
+
+        <!-- DEMOGRAPHICS -->
+        <div class="col-sm-12" id="demographics">
+          <h5 style="text-align: center;">Demographic Questionnaire</h5>
+          <div class="card bg-light">
+            <div class="card-body">
+              <p class="card-text">
+                <form>
+                  <div class="form-row">
+                    <div class="form-group col-md-8 col-form-label col-form-label-sm">
+                      <label for="input_email">If you want to receive the aggregated results, please give us your email <i>(optional)</i></label>
+                      <input type="email" class="form-control" id="input_email" placeholder="email@mail.com" onchange="changeEmail()">
+                    </div>
+
+                    <div class="form-group col-md-2 col-form-label col-form-label-sm">
+                      <label for="input_age">Age (*)</label>
+                      <input type="text" class="form-control" id="input_age" placeholder="e.g., 20" onchange="changeAge()" required>
+                    </div>
+
+                    <div class="form-group col-md-2 col-form-label col-form-label-sm">
+                      <label for="input_gender">Gender (*)</label>
+                      <select id="input_gender" class="form-control" onchange="changeGender()" required>
+                        <option value=" " selected></option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group col-md-4 col-form-label col-form-label-sm">
+                      <label for="input_nationality">Nationality (*)</label>
+                      <input type="text" class="form-control" id="input_nationality" placeholder="e.g., portuguese" onchange="changeNationality()" required>
+                    </div>
+
+                    <div class="form-group col-md-4 col-form-label col-form-label-sm">
+                      <label for="input_field">Field of study (*)</label>
+                      <input type="text" class="form-control" id="input_field" placeholder="e.g., computer science" onchange="changeField()" required>
+                    </div>
+
+                    <div class="form-group col-md-4 col-form-label col-form-label-sm">
+                      <label for="input_vision">Vision (*)</label>
+                      <select id="input_vision" class="form-control" onchange="changeVision()" required>
+                        <option value=" " selected></option>
+                        <option value="Eyeglasses">Eyeglasses</option>
+                        <option value="Contact lenses">Contact lenses</option>
+                        <option value="No visual aids">No visual aids</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group col-md-4 col-form-label col-form-label-sm">
+                      <label for="input_education">Completed education (*)</label>
+                      <select id="input_education" class="form-control" onchange="changeEducation()" required>
+                        <option value=" " selected></option>
+                        <option value="High school">High school</option>
+                        <option value="Bachelor">Bachelor</option>
+                        <option value="Master">Master</option>
+                        <option value="PhD">PhD</option>
+                        <option value="Post-doc">Post-doc</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group col-md-4 col-form-label col-form-label-sm">
+                      <label for="input_current_education">Current year of education (*)</label>
+                      <select id="input_current_education" class="form-control" onchange="changeCurrentEducation()" required>
+                        <option value=" " selected></option>
+                        <option value="1st year of Bachelor">1st year of Bachelor</option>
+                        <option value="2nd year of Bachelor">2nd year of Bachelor</option>
+                        <option value="3rd year of Bachelor">3rd year of Bachelor</option>
+                        <option value="1st year of Master">1st year of Master</option>
+                        <option value="2nr year of Master">2nr year of Master</option>
+                        <option value="Doing a PhD">Doing a PhD</option>
+                        <option value="Doing a Post-doc">Doing a Post-doc</option>s
+                        <option value="I am no longer studying">I am no longer studying</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group col-md-4 col-form-label col-form-label-sm">
+                      <label for="input_occupation">Current occupation (*)</label>
+                      <select id="input_occupation" class="form-control" onclick="changeOccupation()" required>
+                        <option value=" " selected></option>
+                        <option value="Student">Student</option>
+                        <option value="Researcher">Researcher</option>
+                        <option value="Practitioner">Practitioner</option>
+                        <option value="Working student">Working student</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group col-md-12 col-form-label col-form-label-sm">
+                      <label for="input_experience">Previous experience with the modelling language used in the task you just completed (*)</label>
+                      <select id="input_experience" class="form-control" onclick="changeExperience()" required>
+                        <option value=" " selected></option>
+                        <option value="This was my first contact with it">This was my first contact with it</option>
+                        <option value="I learned it in the context of a course">I learned it in the context of a course</option>
+                        <option value="I learned it in a professional context">I learned it in a professional context</option>
+                        <option value="I learned it by myself">I learned it by myself</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-row" id="if_has_experience" style="display:none">
+                    <div class="form-group col-md-6 col-form-label col-form-label-sm">
+                      <label for="input_use_time">Use time (*)</label>
+                      <input type="text" class="form-control" id="input_use_time" placeholder="e.g., 3 months" onchange="changeUseTime()" required>
+                    </div>
+
+                    <div class="form-group col-md-6 col-form-label col-form-label-sm">
+                      <label for="input_last_use">Last use (*)</label>
+                      <input type="text" class="form-control" id="input_last_use" placeholder="e.g., 2016" onchange="changeLastUse()" required>
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group col-md-12 col-form-label col-form-label-sm">
+                      <label for="input_other_languages">Other modelling languages that you know</label>
+                      <input type="text" class="form-control" id="input_other_languages" placeholder="e.g., UML, BPMN" onchange="changeLanguages()">
+                    </div>
+                  </div>
+
+                  <label class="col-form-label col-form-label-sm"><i>(*) mandatory</i></label>
+                  <div class="col-form-label col-form-label-sm" id="mandatory" style="display:none">Please provide the answer to the mandatory questions</div>
+                </form>
+              <!--</p>-->
+            </div>
+          </div>
+          <br/>
+          <button type="submit" class="btn btn-info" id="finish" onClick="validateDemographics();">Continue</button>
+        </div>
+
+        <!-- GENDER MAG -->
+        <div class="col-sm-12" id="genderMag" style="display:none">
+          <h5 style="text-align: center;">GenderMag Questionnaire</h5>
+          <div class="card bg-light">
+            <div class="card-body">
+              <p class="card-text">
+                <form>
+
+                  <div class="form-row" id="genderMagPart1">
+                    <div class="form-group col-md-12 col-form-label col-form-label-sm">
+                      <label for="input_email">Indicate your level of agreement with each of the statements listed below, selecting one per row (*)</label>
+                      <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">I am able to use unfamiliar technology when...</th>
+                            <th scope="col" class="tableHeader">strongly disagree<br/>1</th>
+                            <th scope="col" class="tableHeader">2</th>
+                            <th scope="col" class="tableHeader">3</th>
+                            <th scope="col" class="tableHeader">4</th>
+                            <th scope="col" class="tableHeader">neutral<br/>5</th>
+                            <th scope="col" class="tableHeader">6</th>
+                            <th scope="col" class="tableHeader">7</th>
+                            <th scope="col" class="tableHeader">8</th>
+                            <th scope="col" class="tableHeader">strongly agree<br/>9</th>
+
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row" id="group1Line1Phrase">...I have just the built-in help for assistance</th>
+                            <td><label>
+                              <input type="radio" name="group1Line1" value="1"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line1" value="2"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line1" value="3"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line1" value="4"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line1" value="5"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line1" value="6"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line1" value="7"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line1" value="8"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line1" value="9"/>
+                            </label></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" id="group1Line2Phrase">...I have seen someone else using it before trying it myself</th>
+                            <td><label>
+                              <input type="radio" name="group1Line2" value="1"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line2" value="2"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line2" value="3"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line2" value="4"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line2" value="5"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line2" value="6"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line2" value="7"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line2" value="8"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line2" value="9"/>
+                            </label></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" id="group1Line3Phrase">...no one is around to help if I need it</th>
+                            <td><label>
+                              <input type="radio" name="group1Line3" value="1"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line3" value="2"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line3" value="3"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line3" value="4"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line3" value="5"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line3" value="6"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line3" value="7"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line3" value="8"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line3" value="9"/>
+                            </label></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" id="group1Line4Phrase">...someone else has helped me get started</th>
+                            <td><label>
+                              <input type="radio" name="group1Line4" value="1"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line4" value="2"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line4" value="3"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line4" value="4"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line4" value="5"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line4" value="6"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line4" value="7"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line4" value="8"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line4" value="9"/>
+                            </label></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" id="group1Line5Phrase">...someone shows me how to do it first</th>
+                            <td><label>
+                              <input type="radio" name="group1Line5" value="1"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line5" value="2"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line5" value="3"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line5" value="4"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line5" value="5"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line5" value="6"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line5" value="7"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line5" value="8"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line5" value="9"/>
+                            </label></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" id="group1Line6Phrase">...I have used similar technology before, to do the same task</th>
+                            <td><label>
+                              <input type="radio" name="group1Line6" value="1"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line6" value="2"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line6" value="3"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line6" value="4"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line6" value="5"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line6" value="6"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line6" value="7"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line6" value="8"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line6" value="9"/>
+                            </label></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" id="group1Line7Phrase">...I have never used anything like it before</th>
+                            <td><label>
+                              <input type="radio" name="group1Line7" value="1"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line7" value="2"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line7" value="3"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line7" value="4"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line7" value="5"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line7" value="6"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line7" value="7"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line7" value="8"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group1Line7" value="9"/>
+                            </label></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                  <div class="form-row" id="genderMagPart2" style="display:none">
+                    <div class="form-group col-md-12 col-form-label col-form-label-sm">
+                      <label for="input_email">Indicate your level of agreement with each of the statements listed below, selecting one per row (*)</label>
+                      <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col"></th>
+                            <th scope="col" class="tableHeader">strongly disagree<br/>1</th>
+                            <th scope="col" class="tableHeader">2</th>
+                            <th scope="col" class="tableHeader">3</th>
+                            <th scope="col" class="tableHeader">4</th>
+                            <th scope="col" class="tableHeader">neutral<br/>5</th>
+                            <th scope="col" class="tableHeader">6</th>
+                            <th scope="col" class="tableHeader">7</th>
+                            <th scope="col" class="tableHeader">8</th>
+                            <th scope="col" class="tableHeader">strongly agree<br/>9</th>
+
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row" id="group2Line1Phrase">I am not confident about my ability to use and learn technology. I have other strengths</th>
+                            <td><label>
+                              <input type="radio" name="group2Line1" value="1"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group2Line1" value="2"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group2Line1" value="3"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group2Line1" value="4"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group2Line1" value="5"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group2Line1" value="6"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group2Line1" value="7"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group2Line1" value="8"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group2Line1" value="9"/>
+                            </label></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" id="group2Line2Phrase">I make time to explore technology that is not critical to my job</th>
+                            <td><label>
+                              <input type="radio" name="group2Line2" value="1"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group2Line2" value="2"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group2Line2" value="3"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group2Line2" value="4"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group2Line2" value="5"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group2Line2" value="6"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group2Line2" value="7"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group2Line2" value="8"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group2Line2" value="9"/>
+                            </label></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" id="group2Line3Phrase">One reason I spend time and money on technology is because it's a way for me to look good with peers</th>
+                            <td><label>
+                              <input type="radio" name="group2Line3" value="1"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group2Line3" value="2"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group2Line3" value="3"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group2Line3" value="4"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group2Line3" value="5"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group2Line3" value="6"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group2Line3" value="7"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group2Line3" value="8"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group2Line3" value="9"/>
+                            </label></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" id="group2Line4Phrase">It's fun to try new technology that is not yet available to everyone, such as being a participant in beta programs to test unfinished technology</th>
+                            <td><label>
+                              <input type="radio" name="group2Line4" value="1"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group2Line4" value="2"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group2Line4" value="3"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group2Line4" value="4"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group2Line4" value="5"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group2Line4" value="6"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group2Line4" value="7"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group2Line4" value="8"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group2Line4" value="9"/>
+                            </label></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                  <div class="form-row" id="genderMagPart3" style="display:none">
+                    <div class="form-group col-md-12 col-form-label col-form-label-sm">
+                      <label for="input_email">Indicate your level of agreement with each of the statements listed below, selecting one per row (*)</label>
+                      <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col"></th>
+                            <th scope="col" class="tableHeader">strongly disagree<br/>1</th>
+                            <th scope="col" class="tableHeader">2</th>
+                            <th scope="col" class="tableHeader">3</th>
+                            <th scope="col" class="tableHeader">4</th>
+                            <th scope="col" class="tableHeader">neutral<br/>5</th>
+                            <th scope="col" class="tableHeader">6</th>
+                            <th scope="col" class="tableHeader">7</th>
+                            <th scope="col" class="tableHeader">8</th>
+                            <th scope="col" class="tableHeader">strongly agree<br/>9</th>
+
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row" id="group3Line1Phrase">I enjoy finding the lesser-known features and capabilities of the devices and software I use</th>
+                            <td><label>
+                              <input type="radio" name="group3Line1" value="1"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group3Line1" value="2"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group3Line1" value="3"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group3Line1" value="4"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group3Line1" value="5"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group3Line1" value="6"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group3Line1" value="7"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group3Line1" value="8"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group3Line1" value="9"/>
+                            </label></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" id="group3Line2Phrase">I explore areas of a new application or service before it is time for me to use it</th>
+                            <td><label>
+                              <input type="radio" name="group3Line2" value="1"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group3Line2" value="2"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group3Line2" value="3"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group3Line2" value="4"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group3Line2" value="5"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group3Line2" value="6"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group3Line2" value="7"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group3Line2" value="8"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group3Line2" value="9"/>
+                            </label></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" id="group3Line3Phrase">I'm never satisfied with the default settings from my devices; I customize them in some way</th>
+                            <td><label>
+                              <input type="radio" name="group3Line3" value="1"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group3Line3" value="2"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group3Line3" value="3"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group3Line3" value="4"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group3Line3" value="5"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group3Line3" value="6"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group3Line3" value="7"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group3Line3" value="8"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group3Line3" value="9"/>
+                            </label></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" id="group3Line4Phrase">I want to get things right the first time, so before I decide to take action, I gather as much information as I can</th>
+                            <td><label>
+                              <input type="radio" name="group3Line4" value="1"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group3Line4" value="2"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group3Line4" value="3"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group3Line4" value="4"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group3Line4" value="5"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group3Line4" value="6"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group3Line4" value="7"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group3Line4" value="8"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group3Line4" value="9"/>
+                            </label></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                  <div class="form-row" id="genderMagPart4" style="display:none">
+                    <div class="form-group col-md-12 col-form-label col-form-label-sm">
+                      <label for="input_email">Indicate your level of agreement with each of the statements listed below, selecting one per row (*)</label>
+                      <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col"></th>
+                            <th scope="col" class="tableHeader">strongly disagree<br/>1</th>
+                            <th scope="col" class="tableHeader">2</th>
+                            <th scope="col" class="tableHeader">3</th>
+                            <th scope="col" class="tableHeader">4</th>
+                            <th scope="col" class="tableHeader">neutral<br/>5</th>
+                            <th scope="col" class="tableHeader">6</th>
+                            <th scope="col" class="tableHeader">7</th>
+                            <th scope="col" class="tableHeader">8</th>
+                            <th scope="col" class="tableHeader">strongly agree<br/>9</th>
+
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row" id="group4Line1Phrase">I always do extensive research and comparison shopping before making important purchases</th>
+                            <td><label>
+                              <input type="radio" name="group4Line1" value="1"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group4Line1" value="2"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group4Line1" value="3"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group4Line1" value="4"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group4Line1" value="5"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group4Line1" value="6"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group4Line1" value="7"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group4Line1" value="8"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group4Line1" value="9"/>
+                            </label></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" id="group4Line2Phrase">When a decision needs to be made, it is important to me to gather relevant details before deciding, in order to be sure of the direction we are heading</th>
+                            <td><label>
+                              <input type="radio" name="group4Line2" value="1"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group4Line2" value="2"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group4Line2" value="3"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group4Line2" value="4"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group4Line2" value="5"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group4Line2" value="6"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group4Line2" value="7"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group4Line2" value="8"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group4Line2" value="9"/>
+                            </label></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" id="group4Line3Phrase">I avoid "advanced" buttons or sections in technology</th>
+                            <td><label>
+                              <input type="radio" name="group4Line3" value="1"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group4Line3" value="2"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group4Line3" value="3"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group4Line3" value="4"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group4Line3" value="5"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group4Line3" value="6"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group4Line3" value="7"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group4Line3" value="8"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group4Line3" value="9"/>
+                            </label></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" id="group4Line4Phrase">I avoid activities that are dangerous and risky</th>
+                            <td><label>
+                              <input type="radio" name="group4Line4" value="1"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group4Line4" value="2"/>
+                            </label> </td>
+                            <td><label>
+                              <input type="radio" name="group4Line4" value="3"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group4Line4" value="4"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group4Line4" value="5"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group4Line4" value="6"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group4Line4" value="7"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group4Line4" value="8"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group4Line4" value="9"/>
+                            </label></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" id="group4Line5Phrase">Despite the risks, I use features in technology that haven't been proven to work</th>
+                            <td><label>
+                              <input type="radio" name="group4Line5" value="1"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group4Line5" value="2"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group4Line5" value="3"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group4Line5" value="4"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group4Line5" value="5"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group4Line5" value="6"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group4Line5" value="7"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group4Line5" value="8"/>
+                            </label></td>
+                            <td><label>
+                              <input type="radio" name="group4Line5" value="9"/>
+                            </label></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                  <label class="col-form-label col-form-label-sm"><i>(*) mandatory</i></label>
+                  <div class="col-form-label col-form-label-sm" id="mandatoryMag" style="display:none">Please provide the answer to the mandatory questions</div>
+                </form>
+              <!--</p>-->
+            </div>
+          </div>
+          <br/>
+          <button type="submit" class="btn btn-info" id="endGenderMagPart1" onClick="validatePart1();">Continue</button>
+          <button type="submit" class="btn btn-info" id="endGenderMagPart2" style="display:none" onClick="validatePart2();">Continue</button>
+          <button type="submit" class="btn btn-info" id="endGenderMagPart3" style="display:none" onClick="validatePart3();">Continue</button>
+          <button type="submit" class="btn btn-info" id="endGenderMagPart4" style="display:none" onClick="validatePart4();">Finish</button>
+        </div>
+
+        <!-- THANK YOU -->
+        <div class="col-sm-12" id="thanks" style="display:none">
+          <h5 style="text-align: center;">Thank you!</h5>
+          <div class="card bg-light">
+            <div class="card-body">
+              <p class="card-text">
+                Thank you for your participation! Your collaboration was paramount for the success of this study.
+                <br/>If you have entered your e-mail, you will receive the aggregated results as soon as we have them.
+              </p>
+            </div>
+          </div>
+          <br/>
+          <a href="../index.html" class="btn btn-info">Exit</a>
+        </div>
+      </div>
+    </div>
+
+  </body>
+  <!--- \ BODY --->
+
+
+</html>

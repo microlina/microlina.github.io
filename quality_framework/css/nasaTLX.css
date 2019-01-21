@@ -1,0 +1,77 @@
+td.bottom
+{
+	width: 0.6cm;
+  height: 0.5cm;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	margin: 0;
+	padding: 0 0 0 0;
+}
+
+table.scale
+{
+	margin: 0;
+	padding: 0 0 0 0;
+	border-collapse: collapse
+}
+
+td.top1
+{
+	width: 0.6cm;
+	height: 0.4cm;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	margin: 0;
+	padding: 0 0 0 0;
+}
+
+td.top2
+{
+	width: 0.6cm;
+	height: 0.4cm;
+	border-top: 1px solid black;
+	border-right: 1px solid black;
+	margin: 0;
+	padding: 0 0 0 0;
+}
+
+td.heading
+{
+	font-weight: bold;
+	text-align: center;
+}
+
+td.left
+{
+	font-size: 14px;
+	text-align: left;
+}
+
+td.right
+{
+	font-size: 14px;
+	text-align: right;
+}
+
+td.def
+{
+	width: 16cm;
+	padding-left: 20px;
+	font-size: 15px;
+	text-align: justify;
+}
+
+input.pair
+{
+	width: 7cm;
+	height: 1.5cm;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+#pair1_def
+{
+	width: 20cm;
+	text-align: justify;
+}
