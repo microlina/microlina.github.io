@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+  <!--- HEAD --->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Quality Evaluation Framework was developed in the context of a Computer Science PhD thesis from NOVA LINCS, Universidade NOVA de Lisboa.">
+    <meta name="author" content="Catarina Gralha">
+
+    <meta property="og:title" content="Quality Evaluation Framework" />
+    <meta property="og:site_name" content="Quality Evaluation Framework" />
+    <meta property="og:description" content="This framework helps in the quality evaluation of requirements models. For now, it covers i*, iStar 2.0 and Use Cases" />
+    <meta property="og:image" content="images/gear.png" />
+    <!--<meta property="og:url" content="">-->
+
+    <link rel="icon" href="../../../images/favicon.ico">
+
+    <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link href="../../../css/demographics.css" rel="stylesheet">
+    <link href="../../../fontawesome/css/all.css" rel="stylesheet">
+
+    <script src="../../../js/useCasesQuestions.js"></script>
+
+    <title>Quality Evaluation Framework</title>
+  </head>
+  <!--- \ HEAD --->
+
+
+  <!--- BODY --->
+  <body class="lessPadding" onLoad="onLoad();">
+
+        <div class="col-sm-12" id="task">
+          <h2 id="useCasesQuestion" style="text-align: center;"></h2>
+          <hr size="20">
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="card bg-light">
+                <div class="card-body">
+                  <p><b>Name:</b> Book Hotel Room<br/><br/>
+                    <b>Brief description:</b> A client books an hotel room<br/><br/>
+                    <b>Actors:</b><br/>
+                    &emsp;<b>Primary:</b> Client<br/>
+                    &emsp;<b>Secondary:</b> None<br/><br/>
+                    <b>Pre-conditions:</b> The hotel management system is available<br/><br/>
+                    <b>Main flow:</b> <br/>
+                    &emsp;1. The use case starts when the Client selects the option to book an hotel room.<br/>
+                    &emsp;2. The Client selects a check-in date.<br/>
+                    &emsp;3. The Client selects a check-out date.<br/>
+                    &emsp;4. The system checks if the dates are available.<br/>
+                    &emsp;5. The system shows the available rooms for the dates.<br/>
+                    &emsp;6. The Client select an hotel room.<br/>
+                    &emsp;7. The Client inserts its personal details.<br/>
+                    &emsp;8. The Client finishes the reservation.<br/>
+                    &emsp;9. The system validates the personal information provided by the client.<br/>
+                    &emsp;10. The system confirms the reservation and the use case ends.<br/><br/>
+                    <b>Post-conditions:</b> A new reservation is stored in the system.<br/><br/>
+                    <b>Alternative flows:</b> <br/>
+                    &emsp;InvalidData<br/>
+                    &emsp;NoRoomAvailable<br/>
+                    &emsp;NoCheckInDateAvailable<br/>
+                    &emsp;NoCheckOutDateAvailable<br/>
+                    </p>
+                </div>
+              </div>
+              <br/>
+              <button type="submit" class="btn btn-info" id="nextQuestion" onClick="useCasesNextQuestion();">Continue</button>
+              <a href="../../nasaTLX.html" class="btn btn-info" id="nasaTLX" style="display:none">Continue</a>
+            </div>
+          </div>
+        </div>
+
+  </body>
+  <!--- \ BODY --->
+
+
+</html>

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<!--- HEAD --->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Quality Evaluation Framework was developed in the context of a Computer Science PhD thesis from NOVA LINCS, Universidade NOVA de Lisboa.">
+    <meta name="author" content="Catarina Gralha">
+
+    <meta property="og:title" content="Quality Evaluation Framework" />
+    <meta property="og:site_name" content="Quality Evaluation Framework" />
+    <meta property="og:description" content="This framework helps in the quality evaluation of requirements models. For now, it covers i*, iStar 2.0 and Use Cases" />
+    <meta property="og:image" content="images/gear.png" />
+    <!--<meta property="og:url" content="">-->
+
+    <link rel="icon" href="../../../images/favicon.ico">
+
+    <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link href="../../../css/demographics.css" rel="stylesheet">
+    <link href="../../../fontawesome/css/all.css" rel="stylesheet">
+
+    <script src="../../../js/iStarQuestions.js"></script>
+
+    <title>Quality Evaluation Framework</title>
+</head>
+<!--- \ HEAD --->
+
+
+<!--- BODY --->
+<body class="lessPadding">
+
+<div class="col-sm-12">
+    <div class="row">
+
+        <div class="col-sm-5">
+            <div class="card bg-light">
+                <div class="card-body">
+                    <h5 style="text-align: center;">Hotel Management System</h5>
+                    <br/>
+                    <p style="text-align: justify;">Consider an hotel management system.
+                        The client accesses the system through the internet, and can book an hotel room, by choosing both check-in
+                        and check-out dates. The dates availability are verified and the reservation is confirmed and stored, shall
+                        the selected dates are available. When booking a room in that hotel, the client needs to provide his/hers
+                        personal details.</p>
+
+                    <p style="text-align: justify;"><i>Software engineers created a use case describing the previous scenario (presented on the <b>right side</b> of the screen). However, after a management meeting, <b>a new scenario appeared</b>:</i></p>
+
+                    <!--<p style="text-align: justify;">If the client owns an hotel loyalty card, the number of the card
+                    should be provided during the reservation. Clients with the card will benefit from a 5% discount
+                    on their hotel bill. If the client does not own a card, (s)he can request one after providing the
+                     personal details. </p>-->
+
+                    <p style="text-align: justify;">At check-out, the system calculates the amount to be payed by the
+                        client. The payment can be made by using a debit or a credit card. When using a credit card,
+                        the client has to pay an extra fee.</p>
+
+                    <br/>
+
+                    <p>Please change the use case describing this scenario (on the right), by using the <b>following template</b>:</p>
+
+                    <!-- Opcionalmente, o cliente pode solicitar um cartão de cliente. Este cartão é eletrónico (i.e., virtual). Quando o cliente solicita a saída, pode ter um desconto se possuir um cartão de cliente.-->
+
+                    <div class="card">
+                        <div class="card-body">
+                            <p><b>Name:</b> <i>the name should be the goal as a short active verb phrase</i><br/><br/>
+                                <b>Context of use:</b> <i>a longer statement of the goal, if needed, its normal occurrence condition</i><br/>
+                                <b>Scope:</b> <i>design scope, what system is being considered black-box under design</i><br/>
+                                <b>Level:</b> <i>one of: strategic, user goal, sub-function</i><br/>
+                                <b>Primary actor:</b> <i>a role name for the primary actor, or description</i><br/>
+                                <b>Stakeholders & interests:</b> <i>list of stakeholders and key interests in the use case</i><br/>
+                                <b>Pre-condition:</b> <i>what we expect is already the state of the world</i><br/>
+                                <b>Success end condition:</b> <i>the state of the world upon successful completion</i><br/>
+                                <b>Failed end protection:</b> <i>the state of the world if goal abandoned</i><br/>
+                                <b>Trigger:</b> <i>what starts the use case, may be time event</i><br/><br/>
+                                <b>Main success scenario:</b> <i>what starts the use case, may be time event</i><br/><br/>
+                                <b>Variations:</b> <i>the variations that will cause eventual bifurcation in the scenario</i><br/><br/>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-7">
+            <form>
+                <div class="form-group">
+                    <textarea class="form-control" id="useCasesTemplateModification" rows="39"
+                              placeholder="Describe the use case here...">Name: Book Hotel Room&#13;&#10;&#13;&#10;Context of use: A client books an hotel room&#13;&#10;Scope: Online booking system&#13;&#10;Level: user goal&#13;&#10;Primary actor: Client&#13;&#10;Stakeholders & interests:&#13;&#10;   Hotel owner - have profit&#13;&#10;   Client - get room booked&#13;&#10;Pre-condition: The hotel management system is available&#13;&#10;Success end condition: A new reservation is stores in the system.&#13;&#10;Failed end protection: Nothing happens.&#13;&#10;Trigger: Client selects the option to book an hotel room&#13;&#10;&#13;&#10;Main success scenario: &#13;&#10;   1. The use case starts when the Client selects the option to book an hotel room&#13;&#10;   2. The Client selects a check-in date.&#13;&#10;   3. The Client selects a check-out date.&#13;&#10;   4. The system checks if the dates are available.&#13;&#10;   5. The system shows the available rooms for the dates.&#13;&#10;   6. The Client select an hotel room.&#13;&#10;   7. The Client inserts its personal details.&#13;&#10;   8. The Client finishes the  reservation.&#13;&#10;   9. The system validates the personal information provided by the client.&#13;&#10;   10. The system confirms the reservation and the use case ends.&#13;&#10;&#13;&#10; Variations:&#13;&#10;   InvalidData&#13;&#10;   NoRoomAvailable&#13;&#10;   NoCheckInDateAvailable&#13;&#10;   NoCheckOutDateAvailable&#13;&#10;&#13;&#10;
+                    </textarea>
+                </div>
+            </form>
+
+            <a href="../../nasaTLX.html" class="btn btn-info" id="nasaTLX">Continue</a>
+        </div>
+    </div>
+</div>
+
+</body>
+<!--- \ BODY --->
+
+
+</html>

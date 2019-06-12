@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+  <!--- HEAD --->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Quality Evaluation Framework was developed in the context of a Computer Science PhD thesis from NOVA LINCS, Universidade NOVA de Lisboa.">
+    <meta name="author" content="Catarina Gralha">
+
+    <meta property="og:title" content="Quality Evaluation Framework" />
+    <meta property="og:site_name" content="Quality Evaluation Framework" />
+    <meta property="og:description" content="This framework helps in the quality evaluation of requirements models. For now, it covers i*, iStar 2.0 and Use Cases" />
+    <meta property="og:image" content="images/gear.png" />
+    <!--<meta property="og:url" content="">-->
+
+    <link rel="icon" href="../../../images/favicon.ico">
+
+    <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link href="../../../css/demographics.css" rel="stylesheet">
+    <link href="../../../fontawesome/css/all.css" rel="stylesheet">
+
+    <script src="../../../js/iStarQuestions.js"></script>
+
+    <title>Quality Evaluation Framework</title>
+  </head>
+  <!--- \ HEAD --->
+
+
+  <!--- BODY --->
+  <body class="lessPadding">
+
+    <div class="col-sm-12">
+      <div class="row">
+
+        <div class="col-sm-5">
+          <div class="card bg-light">
+            <div class="card-body">
+              <h5 style="text-align: center;">Hotel Management System</h5>
+              <br/>
+              <p style="text-align: justify;">Consider an hotel management system.
+                The client accesses the system through the internet, and can book an hotel room, by choosing both check-in
+                and check-out dates. The dates availability are verified and the reservation is confirmed and stored, shall
+                the selected dates are available. When booking a room in that hotel, the client needs to provide his/hers
+                personal details. </p>
+
+              <br/>
+
+              <p style="text-align: justify;"> Please specify a use case describing this scenario, by using the <b>following template</b>:</p>
+
+              <div class="card">
+                <div class="card-body">
+                  <p><b>Name:</b> <i>the name should be the goal as a short active verb phrase</i><br/><br/>
+                     <b>Context of use:</b> <i>a longer statement of the goal, if needed, its normal occurrence condition</i><br/>
+                     <b>Scope:</b> <i>design scope, what system is being considered black-box under design</i><br/>
+                     <b>Level:</b> <i>one of: strategic, user goal, sub-function</i><br/>
+                     <b>Primary actor:</b> <i>a role name for the primary actor, or description</i><br/>
+                     <b>Stakeholders & interests:</b> <i>list of stakeholders and key interests in the use case</i><br/>
+                     <b>Pre-condition:</b> <i>what we expect is already the state of the world</i><br/>
+                     <b>Success end condition:</b> <i>the state of the world upon successful completion</i><br/>
+                     <b>Failed end protection:</b> <i>the state of the world if goal abandoned</i><br/>
+                     <b>Trigger:</b> <i>what starts the use case, may be time event</i><br/><br/>
+                     <b>Main success scenario:</b> <i>what starts the use case, may be time event</i><br/><br/>
+                     <b>Variations:</b> <i>the variations that will cause eventual bifurcation in the scenario</i><br/><br/>
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-7">
+          <form>
+            <div class="form-group">
+              <textarea class="form-control" id="useCasesTemplateCreation" rows="39" placeholder="Describe the use case here..."></textarea>
+            </div>
+          </form>
+
+          <a href="../../nasaTLX.html" class="btn btn-info" id="nasaTLX">Continue</a>
+        </div>
+      </div>
+    </div>
+
+  </body>
+  <!--- \ BODY --->
+
+
+</html>

@@ -1,0 +1,2402 @@
+<!doctype html>
+<html lang="en">
+
+<!--- HEAD --->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<meta name="theme-color" content="#000000">-->
+    <meta name="description"
+          content="Usability Evaluation Framework was created in the context of a Computer Science PhD thesis from NOVA LINCS, Universidade NOVA de Lisboa.">
+    <meta name="author" content="Catarina Gralha">
+
+    <meta property="og:title" content="Usability Evaluation Framework"/>
+    <!--<meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="">
+    <meta property="og:image" content="images/gear.png" />-->
+
+    <link rel="icon" href="../images/favicon.ico">
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../fontawesome/css/all.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link href="../css/metrics.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+          integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+    <title>Usability Evaluation Framework</title>
+</head>
+<!--- \ HEAD --->
+
+
+<!--- BODY --->
+<body>
+
+<!--- NAV BAR --->
+<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html"><i class="fas fa-home"></i> Home</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#"><i class="fas fa-chart-bar"></i> Metrics</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../tools/tools.html"><i class="fas fa-wrench"></i> Tools</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../experiments/experiments.html"><i class="fas fa-user-friends"></i>
+                    Experiments</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="mx-auto order-0">
+        <a class="navbar-brand mx-auto" href="../index.html">Usability Evaluation Framework</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="../about.html"><i class="fas fa-info-circle"></i> About</a>
+            </li>
+        </ul>
+    </div>
+
+</nav>
+<!--- \ NAV BAR --->
+
+<div class="container">
+    <!--<div class="row">-->
+
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="pills-iStar1-tab" data-toggle="pill" href="#pills-iStar1"
+               role="tab"
+               aria-controls="pills-iStar1" aria-selected="true"><i>i*</i> 1.0 metrics</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="pills-iStar2-tab" data-toggle="pill" href="#pills-iStar2" role="tab"
+               aria-controls="pills-iStar2" aria-selected="false">iStar 2.0 metrics</a>
+        </li>
+        <!--<li class="nav-item">
+            <a class="nav-link" id="pills-accuracy-tab" data-toggle="pill" href="#pills-accuracy" role="tab"
+               aria-controls="pills-accuracy" aria-selected="false">Accuracy metrics</a>
+        </li>-->
+        <!--<li class="nav-item">
+            <a class="nav-link" id="pills-speed-tab" data-toggle="pill" href="#pills-speed" role="tab"
+               aria-controls="pills-speed" aria-selected="false">Speed metrics</a>
+        </li>-->
+        <!--<li class="nav-item">
+            <a class="nav-link" id="pills-ease-tab" data-toggle="pill" href="#pills-ease" role="tab"
+               aria-controls="pills-ease" aria-selected="false">Ease metrics</a>
+        </li>-->
+        <!--<li class="nav-item">
+            <a class="nav-link" id="pills-subjective-tab" data-toggle="pill" href="#pills-subjective" role="tab"
+               aria-controls="pills-subjective" aria-selected="false">Subjective metrics</a>
+        </li>-->
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-iStar1" role="tabpanel"
+             aria-labelledby="pills-iStar1-tab">
+            <div class="accordion" id="accordioniStar1">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link metricsLink" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <b><i>i*</i> 1.0 complexity metrics</b>
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordioniStar1">
+                        <div class="card-body">
+
+                            <table class="table table-sm">
+                                <thead class="bg-info">
+                                <tr data-toggle="collapse" data-target="#question-1" aria-expanded="true"
+                                    aria-controls="question-1">
+                                    <th scope="col" colspan="2" class="gqm">Q1) How complex is the model,
+                                        concerning
+                                        the number of actors and elements?
+                                        <i class="fas fa-angle-down"></i></th>
+                                </tr>
+                                </thead>
+                                <tbody id="question-1" class="collapse">
+                                <tr>
+                                    <th scope="row" style="width:15%">Symptom</th>
+                                    <td>The size of the model is unusually lower, or higher, than in most models.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Potential problem</th>
+                                    <td>The model may be over-simplistic, or unnecessarily complex, leading to problems
+                                        in the understandability of the system.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Suggested action</th>
+                                    <td class="withBorder">Consider revising the model. If necessary, add more
+                                        detail, or remove accidental complexity.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>NAct</b> – <b>N</b>umber of <b>Act</b>ors</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Total number of actors in the SD/SR model</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Formal definition</th>
+                                    <td class="codeOCL withBorder">context ISTAR <br/>
+                                        def:NAct():Integer = self.hasNode -> <br/>
+                                        select (n:Node | n.oclIsKindOf(Actor)) -> size ()
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>NElem</b> – <b>N</b>umber of <b>Elem</b>ents</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Total number of elements in the SD/SR model</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Formal definition</th>
+                                    <td class="codeOCL">context ISTAR <br/>
+                                        def:NElem():Integer = self.NEOAB() + self.NEIAB()
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Requires</th>
+                                    <td><b>NEOAB</b> – <b>N</b>umber of <b>E</b>lements <b>O</b>utside <b>A</b>ctors'
+                                        <b>B</b>oundaries<br/>
+                                        <b>NEIAB</b> – <b>N</b>umber of <b>E</b>lements <b>I</b>nside <b>A</b>ctors' <b>B</b>oundaries
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-sm table-striped">
+                                <thead class="bg-info">
+                                <tr data-toggle="collapse" data-target="#question-2" aria-expanded="true"
+                                    aria-controls="question-2">
+                                    <th scope="col" colspan="2" class="gqm">Q2) Does an actor have too much
+                                        responsibility in the model?
+                                        <i class="fas fa-angle-down"></i></th>
+                                </tr>
+                                </thead>
+                                <tbody id="question-2" class="collapse">
+                                <tr>
+                                    <th scope="row" style="width:15%">Symptom</th>
+                                    <td>The actor has an unusually high number of internal model elements.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Potential problem</th>
+                                    <td>The actor may have too many responsibilities in the model.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Suggested action</th>
+                                    <td class="withBorder">This actor may be a good candidate for further scrutiny.
+                                        Consider decomposing this actor into several sub-actors and
+                                        distributing his responsibilities among them. If the system has no outliers, the
+                                        assignment of responsibilities is probably
+                                        well balanced.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>NEA</b> – <b>N</b>umber of <b>E</b>lements of an <b>A</b>ctor</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Number of elements inside an actor's boundary in the SR model</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Formal definition</th>
+                                    <td class="codeOCL withBorder">context Actor <br/>
+                                        def:NEA(): Integer = self.hasElement -> <br/>
+                                        select(e:Element | e.oclIsKindOf(Element)) -> size()
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>MinNEA</b> – <b>Min</b>imum <b>N</b>umber of <b>E</b>lements of an <b>A</b>ctor
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Minimum number of elements inside an actor’s boundary</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Formal definition</th>
+                                    <td class="codeOCL withBorder">context ISTAR <br/>
+                                        def:MinNEA(): Integer = self.hasNode -> <br/>
+                                        select(n:Node | n.oclIsKindOf(Actor)) -> <br/>
+                                        iterate(n:Node; min:Integer = -1 | <br/>
+                                        let nea:Integer = n.oclAsType(Actor).NEA() in <br/>
+                                        if min = -1 then nea else min.min(nea) endif)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>MaxNEA</b> – <b>Max</b>imum <b>N</b>umber of <b>E</b>lements of an <b>A</b>ctor
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Maximum number of elements inside an actor's boundary</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Formal definition</th>
+                                    <td class="codeOCL withBorder">context ISTAR <br/>
+                                        def:MaxNEA(): Integer = self.hasNode -> <br/>
+                                        select (n:Node | n.oclIsKindOf(Actor)) -> <br/>
+                                        iterate (n:Node; max:Integer = -1 | <br/>
+                                        let nea:Integer = n.oclAsType(Actor).NEA() in <br/>
+                                        if max = -1 then aux else max.max(nea) endif)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>AvgNEA</b> – <b>A</b>verage <b>N</b>umber of <b>E</b>lements of an <b>A</b>ctor
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Average number of elements inside an actor's boundary</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Formal definition</th>
+                                    <td class="codeOCL">context ISTAR::AvgNEA() <br/>
+                                        pre:self.NAct() > 0
+                                        <br/><br/>
+                                        context ISTAR <br/>
+                                        def:AvgNEA(): Double = self.NEA() / self.NAct()
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Requires</th>
+                                    <td class="withBorder"><b>NEA</b> – <b>N</b>umber of <b>E</b>lements of an <b>A</b>ctor
+                                        <br/>
+                                        <b>NAct</b> – <b>N</b>umber of <b>A</b>ctors
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-sm table-striped">
+                                <thead class="bg-info">
+                                <tr data-toggle="collapse" data-target="#question-3" aria-expanded="true"
+                                    aria-controls="question-3">
+                                    <th scope="col" colspan="2" class="gqm">Q3) How complex is an actor's goal,
+                                        with respect to its decompositions?
+                                        <i class="fas fa-angle-down"></i></th>
+                                </tr>
+                                </thead>
+                                <tbody id="question-3" class="collapse">
+                                <tr>
+                                    <th scope="row" style="width:15%">Symptom</th>
+                                    <td>An actor's goal has an unusually high number of decompositions.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Potential problem</th>
+                                    <td>The goal may be over-decomposed.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Suggested action</th>
+                                    <td class="withBorder">This goal may be a good candidate for further scrutiny.
+                                        Consider abstracting out this goal, if it is over-decomposed. If
+                                        the actor has no outlier goals, their decomposition is probably well balanced.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>NDG</b> – <b>N</b>umber of <b>D</b>ecompositions of a <b>G</b>oal</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Number of decompositions associated with a goal in the SR model</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Formal definition</th>
+                                    <td class="codeOCL withBorder">context Goal <br/>
+                                        def:NDG():Integer = self.goalMeansEnds -> <br/>
+                                        select(me:MeansEnds | me.oclIsKindOf(MeansEnds)) -> size ()
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>MinNDG</b> – <b>Min</b>imum <b>N</b>umber of <b>D</b>ecompositions of a
+                                        <b>G</b>oal
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Minimum number of decompositions associated with a goal</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Formal definition</th>
+                                    <td class="codeOCL withBorder">context Actor <br/>
+                                        def:MinNDG(): Integer = self.hasElement -> <br/>
+                                        select (e:Element | e.oclIsKindOf(Goal) and <br/>
+                                        e.oclAsType(Goal).NDG() > 0) -> <br/>
+                                        iterate (e:Element; min:Integer = -1 | <br/>
+                                        let ndg:Integer = e.oclAsType(Goal).NDG() in <br/>
+                                        if min = -1 then ndg else min.min(ndg) endif)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>MaxNDG</b> – <b>Max</b>imum <b>N</b>umber of <b>D</b>ecompositions of a
+                                        <b>G</b>oal
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Maximum number of decompositions associated with a goal</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Formal definition</th>
+                                    <td class="codeOCL withBorder">context Actor <br/>
+                                        def:MaxNDG():Integer = self.hasElement -> <br/>
+                                        select(e:Element | e.oclIsKindOf(Goal) and <br/>
+                                        e.oclAsType(Goal).NDG () > 0) -> <br/>
+                                        iterate (e:Element; max:Integer = -1 | <br/>
+                                        let ndg:Integer = e.oclAsType(Goal).NDG() in <br/>
+                                        if max = -1 then ndg else max.max(ndg) endif)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>AvgNDG</b> – <b>Av</b>era<b>g</b>e <b>N</b>umber of <b>D</b>ecompositions of
+                                        a <b>G</b>oal
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Average number of decompositions associated with a goal</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Formal definition</th>
+                                    <td class="codeOCL">context Actor::AvgNDG() <br/>
+                                        pre:self.NGWDI() > 0
+                                        <br/><br/>
+                                        context Actor <br/>
+                                        def:AvgNDG(): Double = self.NDG() / self.NGWDI()
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Requires</th>
+                                    <td class="withBorder"><b>NDG</b> – <b>N</b>umber of <b>D</b>ecompositions of a
+                                        <b>G</b>oal <br/>
+                                        <b>NGWDI</b> – <b>N</b>umber of <b>G</b>oals <b>W</b>ith <b>D</b>ecompositions
+                                        <b>I</b>nside
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-sm table-striped">
+                                <thead class="bg-info">
+                                <tr data-toggle="collapse" data-target="#question-4" aria-expanded="true"
+                                    aria-controls="question-4">
+                                    <th scope="col" colspan="2" class="gqm">Q4) How complex is an actor's
+                                        softgoal, with respect to its decomposition?
+                                        <i class="fas fa-angle-down"></i></th>
+                                </tr>
+                                </thead>
+                                <tbody id="question-4" class="collapse">
+                                <tr>
+                                    <th scope="row" style="width:15%">Symptom</th>
+                                    <td>An actor's softgoal has an unusually high number of decompositions.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Potential problem</th>
+                                    <td>The softgoal may be over-decomposed.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Suggested action</th>
+                                    <td class="withBorder">This softgoal may be a good candidate for further scrutiny.
+                                        Consider abstracting out this softgoal, if it is overdecomposed. If the actor
+                                        has no outlier softgoals, their decomposition is probably well balanced.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>NDS</b> – <b>N</b>umber of <b>D</b>ecompositions of a <b>S</b>oftgoal</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Number of decompositions associated with a softgoal in the SR model</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Formal definition</th>
+                                    <td class="codeOCL withBorder">context Softgoal <br/>
+                                        def:NDS(): Integer = self.softgoalContribution -> <br/>
+                                        select(cl:ContributionLink | cl.oclIsKindOf(ContributionLink)) -> size ()
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>MinNDS</b> – <b>Min</b>imum <b>N</b>umber of <b>D</b>ecompositions of a
+                                        <b>S</b>oftgoal
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Minimum number of decompositions associated with a softgoal</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Formal definition</th>
+                                    <td class="codeOCL withBorder">context Actor <br/>
+                                        def:MinNDS():Integer = self.hasElement -> <br/>
+                                        select(e:Element | e.oclIsKindOf(Softgoal) and <br/>
+                                        e.oclAsType(Softgoal).NDS() > 0) -> <br/>
+                                        iterate(e:Element; min:Integer = -1 | <br/>
+                                        let nds:Integer = e.oclAsType(Softgoal).NDS() in <br/>
+                                        if min = -1 then nds else min.min(nds) endif)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>MaxNDS</b> –
+                                        <b>Max</b>imum <b>N</b>umber of <b>D</b>ecompositions of a <b>S</b>oftgoal
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Maximum number of decompositions associated with a softgoal</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Formal definition</th>
+                                    <td class="codeOCL withBorder">context Actor <br/>
+                                        def:MaxNDS(): Integer = self.hasElement -> <br/>
+                                        select(e:Element | e.oclIsKindOf(Softgoal) and <br/>
+                                        e.oclAsType(Softgoal).NDS () > 0) -> <br/>
+                                        iterate(e:Element; max:Integer = -1 | <br/>
+                                        let nds:Integer = e.oclAsType(Softgoal).NDS() in <br/>
+                                        if max = -1 then nds else max.max(nds) endif)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>AvgNDS</b> – <b>Av</b>era<b>g</b>e <b>N</b>umber of <b>D</b>ecompositions of
+                                        a <b>S</b>oftgoal
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Average number of decompositions associated with a softgoal</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Formal definition</th>
+                                    <td>context Actor::AvgNDS () <br/>
+                                        pre:self.NSWDI () > 0
+                                        <br/> <br/>
+                                        context Actor <br/>
+                                        def:AvgNDS():Double = self.NDS() / self.NSWDI()
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Requires</th>
+                                    <td class="withBorder"><b>NDS</b> – <b>N</b>umber of <b>D</b>ecompositions of a
+                                        <b>S</b>oftgoal <br/>
+                                        <b>NSWDI</b> – <b>N</b>umber of <b>S</b>oftgoals <b>W</b>ith <b>D</b>ecompositions
+                                        <b>I</b>nside
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-sm table-striped">
+                                <thead class="bg-info">
+                                <tr data-toggle="collapse" data-target="#question-5" aria-expanded="true"
+                                    aria-controls="question-5">
+                                    <th scope="col" colspan="2" class="gqm">Q5) How complex is an actor's task,
+                                        with respect to its decompositions?
+                                        <i class="fas fa-angle-down"></i></th>
+                                </tr>
+                                </thead>
+                                <tbody id="question-5" class="collapse">
+                                <tr>
+                                    <th scope="row" style="width:15%">Symptom</th>
+                                    <td>An actor's task has an unusually high number of decompositions.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Potential problem</th>
+                                    <td>The task may be over-decomposed.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Suggested action</th>
+                                    <td class="withBorder">This task may be a good candidate for further scrutiny.
+                                        Consider abstracting out this task, if it is over-decomposed. If
+                                        the actor has no outlier tasks, their decomposition is probably well balanced.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>NDT</b> – <b>N</b>umber of <b>D</b>ecompositions of a <b>T</b>ask</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Number of decompositions associated with a task in the SR model</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Formal definition</th>
+                                    <td class="codeOCL withBorder">context Task <br/>
+                                        def:NDT():Integer = self.taskDecompositionLink -> <br/>
+                                        select(dl:DecompositionLink | dl.oclIsKindOf(DecompositionLink)) -> size ()
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>MinNDT</b> – <b>Min</b>imum <b>N</b>umber of <b>D</b>ecompositions of a
+                                        <b>T</b>ask
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Minimum number of decompositions associated with a task</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Formal definition</th>
+                                    <td class="codeOCL withBorder">context Actor <br/>
+                                        def:MinNDT():Integer = self.hasElement -> <br/>
+                                        select(e:Element | e.oclIsKindOf(Task) and <br/>
+                                        e.oclAsType(Task).NDT() > 0) -> <br/>
+                                        iterate(e:Element; min:Integer = -1 | <br/>
+                                        let ndt:Integer = e.oclAsType(Task).NDT() in <br/>
+                                        if min = -1 then ndt else min.min(ndt) endif)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>MaxNDT</b> – <b>Max</b>imum <b>N</b>umber of <b>D</b>ecompositions of a
+                                        <b>T</b>ask
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Maximum number of decompositions associated with a task</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Formal definition</th>
+                                    <td class="codeOCL withBorder">context Actor <br/>
+                                        def:MaxNDT():Integer = self.hasElement -> <br/>
+                                        select(e:Element | e.oclIsKindOf(Task) and <br/>
+                                        e.oclAsType(Task).NDT() > 0) -> <br/>
+                                        iterate(e:Element; max:Integer = -1 | <br/>
+                                        let ndt:Integer = e.oclAsType(Task).NDT() in <br/>
+                                        if max = -1 then ndt else max.max(ndt) endif)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>AvgNDT</b> – <b>Av</b>era<b>g</b>e <b>N</b>umber of <b>D</b>ecompositions of
+                                        a <b>T</b>ask
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Average number of decompositions associated with a task</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Formal definition</th>
+                                    <td class="codeOCL">context Actor::AvgNDTI() <br/>
+                                        pre:self.NTWDI() > 0
+                                        <br/><br/>
+                                        context Actor <br/>
+                                        def:AvgNDTI():Double = self.NDT() / self.NTWDI()
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Requires</th>
+                                    <td class="withBorder"><b>NDT</b> – <b>N</b>umber of <b>D</b>ecompositions of a
+                                        <b>T</b>ask <br/>
+                                        <b>NTWDI</b> – <b>N</b>umber of <b>T</b>asks <b>W</b>ith <b>D</b>ecompositions
+                                        <b>I</b>nside
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-sm table-striped">
+                                <thead class="bg-info">
+                                <tr data-toggle="collapse" data-target="#question-6" aria-expanded="true"
+                                    aria-controls="question-6">
+                                    <th scope="col" colspan="2" class="gqm">Q6) Is an actor too dependent in the
+                                        model?
+                                        <i class="fas fa-angle-down"></i></th>
+                                </tr>
+                                </thead>
+                                <tbody id="question-6" class="collapse">
+                                <tr>
+                                    <th scope="row" style="width:15%">Symptom</th>
+                                    <td>An actor has an unusually high number of outgoing dependencies.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Potential problem</th>
+                                    <td>The actor may be too dependent on other actors to achieve its goals.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Suggested action</th>
+                                    <td class="withBorder">This actor may be a good candidate for further scrutiny.
+                                        Consider balancing the number of outgoing and incoming
+                                        dependencies among actors. If there are no outliers, the dependencies are
+                                        probably well balanced.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>POD</b> – <b>P</b>ercentage of <b>O</b>utgoing <b>D</b>ependencies</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Percentage of outgoing dependencies of an actor in the SD/SR model</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Formal definition</th>
+                                    <td class="codeOCL">context Actor::POD() <br/>
+                                        pre:self.ND() > 0
+                                        <br/><br/>
+                                        context Actor <br/>
+                                        def:POD():Double = self.NOD() / self.ND()
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Requires</th>
+                                    <td class="withBorder"><b>NOD</b> – <b>N</b>umber of <b>O</b>utgoing <b>D</b>ependencies
+                                        <br/>
+                                        <b>ND</b> – <b>N</b>umber of <b>D</b>ependencies
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-sm table-striped">
+                                <thead class="bg-info">
+                                <tr data-toggle="collapse" data-target="#question-7" aria-expanded="true"
+                                    aria-controls="question-7">
+                                    <th scope="col" colspan="2" class="gqm">Q7) Does an actor have too many
+                                        dependencies in the model?
+                                        <i class="fas fa-angle-down"></i></th>
+                                </tr>
+                                </thead>
+                                <tbody id="question-7" class="collapse">
+                                <tr>
+                                    <th scope="row" style="width:15%">Symptom</th>
+                                    <td>An actor has an unusually high number of incoming dependencies.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Potential problem</th>
+                                    <td>If too many actors depend on a particular actor, changes in this actor may have
+                                        ripple effects through the other actors.
+                                        This potentially reduces the maintainability of a system.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Suggested action</th>
+                                    <td class="withBorder">This actor may be a good candidate for further scrutiny.
+                                        Consider balancing the number of outgoing and incoming
+                                        dependencies among actors. If there are no outliers, the dependencies are
+                                        probably well balanced.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>PID</b> – <b>P</b>ercentage of <b>I</b>ncoming <b>D</b>ependencies</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Percentage of incoming dependencies of an actor in the SD/SR model</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Formal definition</th>
+                                    <td class="codeOCL">context Actor::PID() <br/>
+                                        pre:self.ND() > 0
+                                        <br/><br/>
+                                        context Actor <br/>
+                                        def:PID():Double = self.NID() / self.ND()
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Requires</th>
+                                    <td class="withBorder"><b>NID</b> – <b>N</b>umber of <b>I</b>ncoming <b>D</b>ependencies
+                                        <br/>
+                                        <b>ND</b> – <b>N</b>umber of <b>D</b>ependencies
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-sm table-striped">
+                                <thead class="bg-info">
+                                <tr data-toggle="collapse" data-target="#question-8" aria-expanded="true"
+                                    aria-controls="question-8">
+                                    <th scope="col" colspan="2" class="gqm">Q8) Is there a variation in the
+                                        average complexity of the different types of actors?
+                                        <i class="fas fa-angle-down"></i></th>
+                                </tr>
+                                </thead>
+                                <tbody id="question-8" class="collapse">
+                                <tr>
+                                    <th scope="row" style="width:15%">Symptom</th>
+                                    <td>The actors from different types have a significantly different complexity. This
+                                        is observable by statistically comparing
+                                        the distributions of complexity by actor type.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Potential problem</th>
+                                    <td>It might be the case that a particular type of actor is frequently over- or
+                                        under-specified, which would reflect on the
+                                        typical complexity of actors of that type. On the other hand there might be a
+                                        good reason for making a particular actor
+                                        type more (or less) complex than the other ones.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Suggested action</th>
+                                    <td class="withBorder">Consider comparing the average complexity of the different
+                                        actor types with the one found in other systems. If it is
+                                        significantly different, further investigate whether this results from the
+                                        essential complexity of the system, or from some
+                                        accidental factor (such as over-, or under-specification of the actors).
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>NEIAct</b> – <b>N</b>umber of <b>E</b>lements <b>I</b>nside an <b>A</b>ctor
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Number of elements inside an actor’s boundary in the SR model</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Formal definition</th>
+                                    <td class="codeOCL">context ISTAR <br/>
+                                        def:NEIAct():Integer = self.NEIAB() - <br/>
+                                        (self.NEIAgB() + self.NEIPB() + self.NEIRB())
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Requires</th>
+                                    <td class="withBorder"><b>NEIAB</b> – <b>N</b>umber of <b>E</b>lements <b>I</b>nside
+                                        <b>A</b>ctors' <b>B</b>oundaries <br/>
+                                        <b>NEIAgB</b> – <b>N</b>umber of <b>E</b>lements <b>I</b>nside <b>A</b>gents'
+                                        <b>B</b>oundaries <br/>
+                                        <b>NEIPB</b> – <b>N</b>umber of <b>E</b>lements <b>I</b>nside <b>P</b>ositions'
+                                        <b>B</b>oundaries <br/>
+                                        <b>NEIRB</b> – <b>N</b>umber of <b>E</b>lements <b>I</b>nside <b>
+                                            R</b>oles' <b>B</b>oundaries <br/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>NEIAg</b> – <b>N</b>umber of <b>E</b>lements <b>I</b>nside an <b>A</b>gent
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Number of elements inside an agent’s boundary in the SR model</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Formal definition</th>
+                                    <td class="codeOCL withBorder">context Agent <br/>
+                                        def:NEIAg():Integer = self.hasElement -> <br/>
+                                        select(e:Element | e.oclIsKindOf(Element)) -> size()
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>NEIP</b> – <b>N</b>umber of <b>E</b>lements <b>I</b>nside a <b>P</b>osition
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Number of elements inside a position’s boundary in the SR model</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Formal definition</th>
+                                    <td class="codeOCL withBorder">context Position <br/>
+                                        def:NEIP():Integer = self.hasElement -> <br/>
+                                        select(e:Element | e.oclIsKindOf(Element)) -> size()
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>NEIR</b> – <b>N</b>umber of <b>E</b>lements <b>I</b>nside a <b>R</b>ole</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Number of elements inside a role’s boundary in the SR model</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Formal definition</th>
+                                    <td class="codeOCL withBorder">context Role <br/>
+                                        def:NEIR():Integer = self.hasElement -> <br/>
+                                        select(e:Element | e.oclIsKindOf(Element)) -> size ()
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed metricsLink" type="button" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <b><i>i*</i> 1.0 completeness metrics</b>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordioniStar1">
+                        <div class="card-body">
+                            <table class="table table-sm table-striped">
+                                <thead class="bg-info">
+                                <tr data-toggle="collapse" data-target="#question-9" aria-expanded="true"
+                                    aria-controls="question-9">
+                                    <th scope="col" colspan="2" class="gqm">Q9) How specific are the actors?
+                                        <i class="fas fa-angle-down"></i></th>
+                                </tr>
+                                </thead>
+                                <tbody id="question-9" class="collapse">
+                                <tr>
+                                    <th scope="row" style="width:15%">Symptom</th>
+                                    <td>This model uses a significantly different percentage of specific
+                                        actors, when compared to other models.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Potential problem</th>
+                                    <td>This may be a symptom of an insufficiently detailed system
+                                        specification, or, conversely, an over-specified one which may be difficult to
+                                        understand.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Suggested action</th>
+                                    <td class="withBorder">Consider scrutinising the types of actors used in
+                                        the model and re-considering whether an actor should, or should not be defined
+                                        using a specific type.
+                                    </td>
+                                </tr>
+                                <tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>PSAct</b> – <b>P</b>ercentage of <b>S</b>pecific <b>A</b>ctors</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Percentage of actors with a specific type (agent, position or role).</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Formal definition</th>
+                                    <td class="codeOCL">context ISTAR::PSAct() <br/>
+                                        pre:self.NAct() > 0
+                                        <br/> <br/>
+                                        context ISTAR <br/>
+                                        def:PSAct():Double = (self.NAgents() + <br/>
+                                        self.NRoles() + self.NPos()) / self.NAct ()
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Requires</th>
+                                    <td class="withBorder">
+                                        <b>NAgents</b> – <b>N</b>umber of <b>A</b>gents <br/>
+                                        <b>NRoles</b> – <b>N</b>umber of <b>R</b>oles <br/>
+                                        <b>NPo</b>s – <b>N</b>umber of <b>P</b>ositions <br/>
+                                        <b>NAct</b> – <b>N</b>umber of <b>A</b>ctors <br/>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-sm table-striped">
+                                <thead class="bg-info">
+                                <tr data-toggle="collapse" data-target="#question-10" aria-expanded="true"
+                                    aria-controls="question-10">
+                                    <th scope="col" colspan="2" class="gqm">Q10) How detailed are the goals?
+                                        <i class="fas fa-angle-down"></i></th>
+                                </tr>
+                                </thead>
+                                <tbody id="question-10" class="collapse">
+                                <tr>
+                                    <th scope="row" style="width:15%">Symptom</th>
+                                    <td>An actor's goal has an unusually low number of decompositions.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Potential problem</th>
+                                    <td>The goal may be under-decomposed.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Suggested action</th>
+                                    <td class="withBorder">This goal may be a good candidate for further
+                                        scrutiny. Consider detailing this goal, if it is under-decomposed. If the actor
+                                        has no outlier goals, their detail is probably well balanced.
+                                    </td>
+                                </tr>
+                                <tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>PGWME</b> – <b>P</b>ercentage of <b>G</b>oals <b>W</b>ith
+                                        <b>M</b>eans-<b>E</b>nd
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Percentage of goals with means-end link</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Formal definition</th>
+                                    <td class="codeOCL">context ISTAR::PGWME() <br/>
+                                        pre:self.NGIAB () > 0
+                                        <br/><br/>
+                                        context ISTAR <br/>
+                                        def:PGWME(): Double = self.NGWD() / self.NGIAB()
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Requires</th>
+                                    <td class="withBorder">
+                                        <b>NGWD</b> – <b>N</b>umber of <b>G</b>oals <b>W</b>ith <b>D</b>ecompositions
+                                        <br/>
+                                        <b>NGIAB</b> – <b>N</b>umber of <b>G</b>oals <b>I</b>nside <b>A</b>ctors'
+                                        <b>B</b>oundaries
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-sm table-striped">
+                                <thead class="bg-info">
+                                <tr data-toggle="collapse" data-target="#question-11" aria-expanded="true"
+                                    aria-controls="question-11">
+                                    <th scope="col" colspan="2" class="gqm">Q11) How detailed are the softgoals?
+                                        <i class="fas fa-angle-down"></i></th>
+                                </tr>
+                                </thead>
+                                <tbody id="question-11" class="collapse">
+                                <tr>
+                                    <th scope="row" style="width:15%">Symptom</th>
+                                    <td>An actor's softgoal has an unusually low number of decompositions.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Potential problem</th>
+                                    <td>The softgoal may be under-decomposed.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Suggested action</th>
+                                    <td class="withBorder">This softgoal may be a good candidate for further
+                                        scrutiny. Consider detailing this softgoal, if it is under-decomposed. If
+                                        the actor has no outlier softgoals, their detail is probably well balanced.
+                                    </td>
+                                </tr>
+                                <tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>PSWC</b> – <b>P</b>ercentage of <b>S</b>oftgoals <b>W</b>ith <b>C</b>ontributions
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Percentage of softgoals with contribution links</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Formal definition</th>
+                                    <td class="codeOCL">context ISTAR::PSWC() <br/>
+                                        pre:self.NSIAB() > 0
+                                        <br/> <br/>
+                                        context ISTAR <br/>
+                                        def:PSWC():Double = self.NSWD() / self.NSIAB()
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Requires</th>
+                                    <td class="withBorder">
+                                        <b>NSWD</b> – <b>N</b>umber of <b>S</b>oftgoals <b>W</b>ith <b>D</b>ecompositions
+                                        <br/>
+                                        <b>NSIAB</b> – <b>N</b>umber of <b>S</b>oftgoals <b>I</b>nside <b>A</b>ctors'
+                                        <b>B</b>oundaries
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-sm table-striped">
+                                <thead class="bg-info">
+                                <tr data-toggle="collapse" data-target="#question-12" aria-expanded="true"
+                                    aria-controls="question-12">
+                                    <th scope="col" colspan="2" class="gqm">Q12) How detailed is the SR model with
+                                        respect to its actors?
+                                        <i class="fas fa-angle-down"></i></th>
+                                </tr>
+                                </thead>
+                                <tbody id="question-12" class="collapse">
+                                <tr>
+                                    <th scope="row" style="width:15%">Symptom</th>
+                                    <td>The SR model has an unusually low percentage of actors with elements
+                                        inside its boundary.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Potential problem</th>
+                                    <td>The actors specification may be over-simplistic.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Suggested action</th>
+                                    <td class="withBorder">Those actors may be good candidates for further
+                                        scrutiny. Consider adding and/or detailing elements inside their boundaries. If
+                                        the system has no outliers, the SR model is probably defined with the typical
+                                        amount of details, with respect to the elements inside actors boundaries.
+                                    </td>
+                                </tr>
+                                <tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>PAWEI</b> – <b>P</b>ercentage of <b>A</b>ctors <b>W</b>ith <b>E</b>lements
+                                        <b>I</b>nside
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Percentage of actors with elements inside its boundary</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Formal definition</th>
+                                    <td class="codeOCL">
+                                        context ISTAR::PAWEI() <br/>
+                                        pre:self.NAct() > 0
+                                        <br/> <br/>
+                                        context ISTAR <br/>
+                                        def:PAWEI():Double = self.NAWEI() / self.NAct()
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Requires</th>
+                                    <td class="withBorder">
+                                        <b>NAWEI</b> – <b>N</b>umber of <b>A</b>ctors <b>W</b>ith <b>E</b>lements
+                                        <b>I</b>nside <br/>
+                                        <b>NAct</b> – <b>N</b>umber of <b>A</b>ctors
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-sm table-striped">
+                                <thead class="bg-info">
+                                <tr data-toggle="collapse" data-target="#question-13" aria-expanded="true"
+                                    aria-controls="question-13">
+                                    <th scope="col" colspan="2" class="gqm">Q13) How close are we to end the assignment
+                                        of responsibilities to an actor?
+                                        <i class="fas fa-angle-down"></i></th>
+                                </tr>
+                                </thead>
+                                <tbody id="question-13" class="collapse">
+                                <tr>
+                                    <th scope="row" style="width:15%">Symptom</th>
+                                    <td>The percentage of actors with unconnected elements inside their boundaries
+                                        represents the percentage of actors with an
+                                        incomplete specification.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Potential problem</th>
+                                    <td>The system specification will not be complete, which can lead to problems in its
+                                        understandability. This may hamper the
+                                        developers ability to faithfully implement the system according to the intention
+                                        of the requirements engineer, because
+                                        this intention is not documented with enough detail in the requirements model.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Suggested action</th>
+                                    <td class="withBorder">Consider completing the specification.</td>
+                                </tr>
+                                <tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>PAWOUEI</b> – <b>P</b>ercentage of <b>A</b>ctors <b>W</b>ith<b>O</b>ut
+                                        <b>U</b>nconnected
+                                        <b>E</b>lements <b>I</b>nside
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Percentage of actors without unconnected elements inside its boundary</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Formal definition</th>
+                                    <td class="codeOCL">
+                                        context ISTAR <br/>
+                                        def:PAWOUEI():Double = 1 - self.PAWUEI()
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Requires</th>
+                                    <td class="withBorder">
+                                        <b>PAWUEI</b> – <b>P</b>ercentage of <b>A</b>ctors <b>W</b>ith <b>U</b>nconnected
+                                        <b>E</b>lements <b>I</b>nside
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-sm table-striped">
+                                <thead class="bg-info">
+                                <tr data-toggle="collapse" data-target="#question-14" aria-expanded="true"
+                                    aria-controls="question-14">
+                                    <th scope="col" colspan="2" class="gqm">Q14) How close are we to end the assignment
+                                        of links to the actors?
+                                        <i class="fas fa-angle-down"></i></th>
+                                </tr>
+                                </thead>
+                                <tbody id="question-14" class="collapse">
+                                <tr>
+                                    <th scope="row" style="width:15%">Symptom</th>
+                                    <td>The percentage of actors which are not connected to other elements in the
+                                        system.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Potential problem</th>
+                                    <td>The system specification will not be complete, which can lead to problems in its
+                                        understandability. In particular, the
+                                        role of the actor in the system may become unclear. This may hamper the
+                                        developers ability to faithfully implement the
+                                        system according to the intention of the requirements engineer, because this
+                                        intention is not documented with enough
+                                        detail in the requirements model.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Suggested action</th>
+                                    <td class="withBorder">Consider completing the specification by creating the
+                                        necessary associations between the actor and other model elements.
+                                    </td>
+                                </tr>
+                                <tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>PAWDOA</b> – <b>P</b>ercentage of <b>A</b>ctors <b>W</b>ith <b>D</b>ependencies
+                                        <b>O</b>r <b>A</b>ssociations
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Percentage of actors with dependency or association links</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Formal definition</th>
+                                    <td class="codeOCL">
+                                        context ISTAR::PAWDOA() <br/>
+                                        pre:NAct() > 0
+                                        <br/> <br/>
+                                        context ISTAR <br/>
+                                        def:PAWDOA():Double = self.NAWDOA() / self.NAct()
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Requires</th>
+                                    <td class="withBorder">
+                                        <b>NAWDOA</b> – <b>N</b>umber of <b>A</b>ctors <b>W</b>ith <b>D</b>ependencies
+                                        <b>O</b>r <b>A</b>ssociations <br/>
+                                        <b>NAct</b> – <b>N</b>umber of <b>Act</b>ors
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="card-header" id="headingFive">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link metricsLink" type="button" data-toggle="collapse"
+                                    data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                <b><i>i*</i> 1.0 metamodel</b>
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                         data-parent="#accordioniStar1">
+                        <div class="card-body">
+
+                            <figure class="figure">
+                                <img src="../images/iStar1_metamodel.jpg" class="figure-img img-fluid rounded"
+                                     alt="i* 1.0 metamodel">
+                            </figure>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="pills-iStar2" role="tabpanel"
+             aria-labelledby="pills-iStar2-tab">
+            <div class="accordion" id="accordioniStar2">
+
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed metricsLink" type="button" data-toggle="collapse"
+                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <b>iStar 2.0 complexity metrics</b>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                         data-parent="#accordioniStar2">
+                        <div class="card-body">
+                            <table class="table table-sm table-striped">
+                                <thead class="bg-info">
+                                <tr data-toggle="collapse" data-target="#question-15" aria-expanded="true"
+                                    aria-controls="question-15">
+                                    <th scope="col" colspan="2" class="gqm">Q15) How complex is the model, concerning
+                                        the number of actors and elements?
+                                        <i class="fas fa-angle-down"></i></th>
+                                </tr>
+                                </thead>
+                                <tbody id="question-15" class="collapse">
+                                <tr>
+                                    <th scope="row" style="width:15%">Symptom</th>
+                                    <td>The size of the model is unusually lower, or higher, than in most models.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Potential problem</th>
+                                    <td>The model may be over-simplistic, or unnecessarily complex, leading to problems
+                                        in the understandability of the system.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Suggested action</th>
+                                    <td class="withBorder">Consider revising the model. If necessary, add more detail,
+                                        or remove accidental complexity.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>NAct</b> - <b>N</b>umber of <b>Act</b>ors</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Total number of actors in the SD/SR model</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Formal definition</th>
+                                    <td class="codeOCL withBorder">context ISTAR <br/>
+                                        def:NAct():Integer = self.hasNode -> <br/>
+                                        select (n:Node | n.oclIsKindOf(Actor)) -> size ()
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>NElem</b> - <b>N</b>umber of <b>Elem</b>ents</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Total number of elements in the SD/SR model</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Formal definition</th>
+                                    <td class="codeOCL">context ISTAR <br/>
+                                        def:NElem():Integer = self.NEOAB() + self.NEIAB()</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Requires</th>
+                                    <td class="withBorder">
+                                        <b>NEOAB</b> – <b>N</b>umber of <b>E</b>lements <b>O</b>utside <b>A</b>ctors' <b>B</b>oundaries <br/>
+                                            <b>NEIAB</b> – <b>N</b>umber of <b>E</b>lements <b>I</b>nside <b>A</b>ctors' <b>B</b>oundaries
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-sm table-striped">
+                                <thead class="bg-info">
+                                <tr data-toggle="collapse" data-target="#question-16" aria-expanded="true"
+                                    aria-controls="question-16">
+                                    <th scope="col" colspan="2" class="gqm">Q16) Does an actor have too much
+                                        responsibility in the model?
+                                        <i class="fas fa-angle-down"></i></th>
+                                </tr>
+                                </thead>
+                                <tbody id="question-16" class="collapse">
+                                <tr>
+                                    <th scope="row" style="width:15%">Symptom</th>
+                                    <td>The actor has an unusually high number of internal model elements.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Potential problem</th>
+                                    <td>The actor may have too many responsibilities in the model.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Suggested action</th>
+                                    <td class="withBorder">This actor may be a good candidate for further scrutiny.
+                                        Consider decomposing this actor into several sub-actors and distributing his
+                                        responsibilities among them. If the system has no outliers, the assignment of
+                                        responsibilities is probably well balanced.
+                                    </td>
+                                </tr>
+                                <tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>NEA</b> – <b>N</b>umber of <b>E</b>lements of an <b>A</b>ctor</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Number of elements inside an actor's boundary in the SR model</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Formal definition</th>
+                                    <td class="codeOCL withBorder">context Actor <br/>
+                                        def:NEA(): Integer = self.hasElement -> <br/>
+                                        select(e:Element | e.oclIsKindOf(Element)) -> size()</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>MinNEA</b> – <b>Min</b>imum <b>N</b>umber of <b>E</b>lements of an <b>A</b>ctor
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Minimum number of elements inside an actor's boundary</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Formal definition</th>
+                                    <td class="codeOCL withBorder">context ISTAR <br/>
+                                        def:MinNEA(): Integer = self.hasNode -> <br/>
+                                        select(n:Node | n.oclIsKindOf(Actor)) -> <br/>
+                                        iterate(n:Node; min:Integer = -1 | <br/>
+                                        let nea:Integer = n.oclAsType(Actor).NEA() in <br/>
+                                        if min = -1 then nea else min.min(nea) endif)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>MaxNEA</b> – <b>Max</b>imum <b>N</b>umber of <b>E</b>lements of an <b>A</b>ctor
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Maximum number of elements inside an actor's boundary</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Formal definition</th>
+                                    <td class="codeOCL withBorder">context ISTAR <br/>
+                                        def:MaxNEA(): Integer = self.hasNode -> <br/>
+                                        select (n:Node | n.oclIsKindOf(Actor)) -> <br/>
+                                        iterate (n:Node; max:Integer = -1 | <br/>
+                                        let nea:Integer = n.oclAsType(Actor).NEA() in <br/>
+                                        if max = -1 then aux else max.max(nea) endif)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>AvgNEA</b> – <b>Av</b>era<b>g</b>e <b>N</b>umber of <b>E</b>lements of an <b>A</b>ctor
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Average number of elements inside an actor's boundary</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Formal definition</th>
+                                    <td class="codeOCL">context ISTAR::AvgNEA() <br/>
+                                        pre:self.NAct() > 0 <br/> <br/>
+
+                                        context ISTAR <br/>
+                                        def:AvgNEA(): Double = self.NEA() / self.NAct()
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Requires</th>
+                                    <td class="withBorder">
+                                        <b>NEA</b> – <b>N</b>umber of <b>E</b>lements of an <b>A</b>ctor <br/>
+                                        <b>NAct</b> – <b>N</b>umber of <b>A</b>ctors</td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-sm table-striped">
+                                <thead class="bg-info">
+                                <tr data-toggle="collapse" data-target="#question-17" aria-expanded="true"
+                                    aria-controls="question-17">
+                                    <th scope="col" colspan="2" class="gqm">Q17) How complex is an actor's goal, with
+                                        respect to its decompositions?
+                                        <i class="fas fa-angle-down"></i></th>
+                                </tr>
+                                </thead>
+                                <tbody id="question-17" class="collapse">
+                                <tr>
+                                    <th scope="row" style="width:15%">Symptom</th>
+                                    <td>An actor's goal has an unusually high number of decompositions.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Potential problem</th>
+                                    <td>The goal may be over-decomposed.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Suggested action</th>
+                                    <td class="withBorder">This goal may be a good candidate for further scrutiny.
+                                        Consider abstracting out this goal, if it is over-decomposed. If the actor has
+                                        no outlier goals, their decomposition is probably well balanced.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>NDG</b> – <b>N</b>umber of <b>D</b>ecompositions of a <b>G</b>oal</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Number of decompositions associated with a goal in the SR model</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Formal definition</th>
+                                    <td class="codeOCL withBorder">
+                                        context Goal <br/>
+                                        def:NDG():Integer = self.elementRefinement -> <br/>
+                                        select(re:Refinement | re.oclIsKindOf(Refinement)) -> size ()
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>MinNDG</b> – <b>Min</b>imum <b>N</b>umber of <b>D</b>ecompositions of a
+                                        <b>G</b>oal
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Minimum number of decompositions associated with a goal</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Formal definition</th>
+                                    <td class="codeOCL withBorder">
+                                        context Actor <br/>
+                                        def:MinNDG(): Integer = self.hasElement -> <br/>
+                                        select (e:Element | e.oclIsKindOf(Goal) and <br/>
+                                        e.oclAsType(Goal).NDG() > 0) -> <br/>
+                                        iterate (e:Element; min:Integer = -1 | <br/>
+                                        let ndg:Integer = e.oclAsType(Goal).NDG() in <br/>
+                                        if min = -1 then ndg else min.min(ndg) endif) <br/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>MaxNDG</b> – <b>Max</b>imum <b>N</b>umber of <b>D</b>ecompositions of a
+                                        <b>G</b>oal
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Maximum number of decompositions associated with a goal</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Formal definition</th>
+                                    <td class="codeOCL withBorder">
+                                        context Actor <br/>
+                                        def:MaxNDG():Integer = self.hasElement -> <br/>
+                                        select(e:Element | e.oclIsKindOf(Goal) and <br/>
+                                        e.oclAsType(Goal).NDG () > 0) -> <br/>
+                                        iterate (e:Element; max:Integer = -1 | <br/>
+                                        let ndg:Integer = e.oclAsType(Goal).NDG() in <br/>
+                                        if max = -1 then ndg else max.max(ndg) endif)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>AvgNDG</b> – <b>Av</b>era<b>g</b>e <b>N</b>umber of <b>D</b>ecompositions of
+                                        a <b>G</b>oal
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Average number of decompositions associated with a goal</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Formal definition</th>
+                                    <td class="codeOCL">
+                                        context Actor::AvgNDG() <br/>
+                                        pre:self.NGWDI() > 0 <br/> <br/>
+
+                                        context Actor <br/>
+                                        def:AvgNDG(): Double = self.NDG() / self.NGWDI()
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Requires</th>
+                                    <td class="withBorder">
+                                        <b>NDG</b> – <b>N</b>umber of <b>D</b>ecompositions of a <b>G</b>oal <br/>
+                                        <b>NGWDI</b> – <b>N</b>umber of <b>G</b>oals <b>W</b>ith <b>D</b>ecompositions <b>I</b>nside
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-sm table-striped">
+                                <thead class="bg-info">
+                                <tr data-toggle="collapse" data-target="#question-18" aria-expanded="true"
+                                    aria-controls="question-18">
+                                    <th scope="col" colspan="2" class="gqm">Q18) How complex is an actor's quality,
+                                        with respect to its contributions?
+                                        <i class="fas fa-angle-down"></i></th>
+                                </tr>
+                                </thead>
+                                <tbody id="question-18" class="collapse">
+                                <tr>
+                                    <th scope="row" style="width:15%">Symptom</th>
+                                    <td>An actor's quality has an unusually high number of decompositions.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Potential problem</th>
+                                    <td>The quality may be over-decomposed.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Suggested action</th>
+                                    <td class="withBorder">This quality may be a good candidate for further scrutiny.
+                                        Consider abstracting out this quality, if it is overdecomposed. If the actor has
+                                        no outlier quality, their decomposition is probably well balanced.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>NDQ</b> – <b>N</b>umber of <b>D</b>ecompositions of a <b>Q</b>uality</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Number of decompositions associated with a quality in the SR model</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Formal definition</th>
+                                    <td class="codeOCL withBorder">
+                                        context Quality <br/>
+                                        def:NDQ(): Integer = self.qualityContribution -> <br/>
+                                        select(cl:ContributionLink | cl.oclIsKindOf(ContributionLink)) -> size ()
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>MinNDQ</b> – <b>Min</b>imum <b>N</b>umber of <b>D</b>ecompositions of a
+                                        <b>Q</b>uality
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Minimum number of decompositions associated with a quality</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Formal definition</th>
+                                    <td class="codeOCL withBorder">
+                                        context Actor <br/>
+                                        def:MinNDQ():Integer = self.hasElement -> <br/>
+                                        select(e:Element | e.oclIsKindOf(Quality) and <br/>
+                                        e.oclAsType(Quality).NDQ() > 0) -> <br/>
+                                        iterate(e:Element; min:Integer = -1 | <br/>
+                                        let ndq:Integer = e.oclAsType(Quality).NDQ() in <br/>
+                                        if min = -1 then ndq else min.min(ndq) endif)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>MaxNDS</b> – <b>Max</b>imum <b>N</b>umber of <b>D</b>ecompositions of a
+                                        <b>Q</b>uality
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Maximum number of decompositions associated with a quality</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Formal definition</th>
+                                    <td class="codeOCL withBorder">
+                                        context Actor <br/>
+                                        def:MaxNDQ(): Integer = self.hasElement ->  <br/>
+                                        select(e:Element | e.oclIsKindOf(Quality) and  <br/>
+                                        e.oclAsType(Quality).NDQ () > 0) ->  <br/>
+                                        iterate(e:Element; max:Integer = -1 |   <br/>
+                                        let ndq:Integer = e.oclAsType(Quality).NDQ() in  <br/>
+                                        if max = -1 then ndq else max.max(ndq) endif)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>AvgNDQ</b> – <b>Av</b>era<b>g</b>e <b>N</b>umber of <b>D</b>ecompositions of
+                                        a <b>Q</b>uality
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Average number of decompositions associated with a quality</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Formal definition</th>
+                                    <td class="codeOCL">
+                                        context Actor::AvgNDQ () <br/>
+                                        pre:self.NQWDI () > 0 <br/> <br/>
+
+                                        context Actor <br/>
+                                        def:AvgNDQ():Double = self.NDQ() / self.NQWDI()
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Requires</th>
+                                    <td class="withBorder">
+                                        <b>NDQ</b> – <b>N</b>umber of <b>D</b>ecompositions of a <b>Q</b>uality <br/>
+                                        <b>NQWDI</b> – <b>N</b>umber of <b>Q</b>ualities <b>W</b>ith <b>D</b>ecompositions <b>I</b>nside
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-sm table-striped">
+                                <thead class="bg-info">
+                                <tr data-toggle="collapse" data-target="#question-19" aria-expanded="true"
+                                    aria-controls="question-19">
+                                    <th scope="col" colspan="2" class="gqm">Q19) How complex is an actor's task,
+                                        with respect to its refinements?
+                                        <i class="fas fa-angle-down"></i></th>
+                                </tr>
+                                </thead>
+                                <tbody id="question-19" class="collapse">
+                                <tr>
+                                    <th scope="row" style="width:15%">Symptom</th>
+                                    <td>An actor's task has an unusually high number of decompositions.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Potential problem</th>
+                                    <td>The task may be over-decomposed.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Suggested action</th>
+                                    <td class="withBorder">This task may be a good candidate for further scrutiny.
+                                        Consider abstracting out this task, if it is over-decomposed. If the actor has
+                                        no outlier tasks, their decomposition is probably well balanced.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>NDT</b> – <b>N</b>umber of <b>D</b>ecompositions of a <b>T</b>ask</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Number of decompositions associated with a task in the SR model</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Formal definition</th>
+                                    <td class="codeOCL withBorder">
+                                        context Task <br/>
+                                        def:NDT():Integer = self.elementRefinement -> <br/>
+                                        select(re:Refinement | re.oclIsKindOf(Refinement)) -> size ()
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>MinNDT</b> – <b>Min</b>imum <b>N</b>umber of <b>D</b>ecompositions of a
+                                        <b>T</b>ask
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Minimum number of decompositions associated with a task</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Formal definition</th>
+                                    <td class="codeOCL withBorder">
+                                        context Actor <br/>
+                                        def:MinNDT(): Integer = self.hasElement -> <br/>
+                                        select (e:Element | e.oclIsKindOf(Task) and <br/>
+                                        e.oclAsType(Task).NDT() > 0) -> <br/>
+                                        iterate (e:Element; min:Integer = -1 | <br/>
+                                        let ndt:Integer = e.oclAsType(Task).NDT() in <br/>
+                                        if min = -1 then ndt else min.min(ndt) endif)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>MaxNDT</b> – <b>Max</b>imum <b>N</b>umber of <b>D</b>ecompositions of a
+                                        <b>T</b>ask
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Maximum number of decompositions associated with a task</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Formal definition</th>
+                                    <td class="codeOCL withBorder">
+                                        context Actor <br/>
+                                        def:MaxNDT():Integer = self.hasElement -> <br/>
+                                        select(e:Element | e.oclIsKindOf(Task) and <br/>
+                                        e.oclAsType(Task).NDT () > 0) -> <br/>
+                                        iterate (e:Element; max:Integer = -1 | <br/>
+                                        let ndt:Integer = e.oclAsType(Task).NDT() in <br/>
+                                        if max = -1 then ndt else max.max(ndt) endif)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>AvgNDT</b> – <b>Av</b>era<b>g</b>e <b>N</b>umber of <b>D</b>ecompositions of
+                                        a <b>T</b>ask
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Average number of decompositions associated with a task</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Formal definition</th>
+                                    <td class="codeOCL">
+                                        context Actor::AvgNDT() <br/>
+                                        pre:self.NTWDI() > 0 <br/> <br/>
+
+                                        context Actor <br/>
+                                        def:AvgNDT(): Double = self.NDT() / self.NTWDI()
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Requires</th>
+                                    <td class="withBorder">
+                                        <b>NDT</b> – <b>N</b>umber of <b>D</b>ecompositions of a <b>T</b>ask <br/>
+                                        <b>NTWDI</b> – <b>N</b>umber of <b>T</b>asks <b>W</b>ith <b>D</b>ecompositions <b>I</b>nside
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-sm table-striped">
+                                <thead class="bg-info">
+                                <tr data-toggle="collapse" data-target="#question-20" aria-expanded="true"
+                                    aria-controls="question-20">
+                                    <th scope="col" colspan="2" class="gqm">Q20) Is an actor too dependent in the
+                                        model?
+                                        <i class="fas fa-angle-down"></i></th>
+                                </tr>
+                                </thead>
+                                <tbody id="question-20" class="collapse">
+                                <tr>
+                                    <th scope="row" style="width:15%">Symptom</th>
+                                    <td>An actor has an unusually high number of outgoing dependencies.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Potential problem</th>
+                                    <td>The actor may be too dependent on other actors to achieve its goals.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Suggested action</th>
+                                    <td class="withBorder"> This actor may be a good candidate for further scrutiny.
+                                        Consider balancing the number of outgoing and incoming dependencies among
+                                        actors. If there are no outliers, the dependencies are probably well balanced.
+                                    </td>
+                                </tr>
+                                <tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>POD</b> – <b>P</b>ercentage of <b>O</b>utgoing <b>D</b>ependencies</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Percentage of outgoing dependencies of an actor in the SD/SR model</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Formal definition</th>
+                                    <td class="codeOCL">
+                                        context Actor::POD() <br/>
+                                        pre:self.ND() > 0 <br/> <br/>
+
+                                        context Actor <br/>
+                                        def:POD():Double = self.NOD() / self.ND()
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Requires</th>
+                                    <td class="withBorder">
+                                        <b>NOD</b> – <b>N</b>umber of <b>O</b>utgoing <b>D</b>ependencies <br/>
+                                        <b>ND</b> – <b>N</b>umber of <b>D</b>ependencies
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-sm table-striped">
+                                <thead class="bg-info">
+                                <tr data-toggle="collapse" data-target="#question-21" aria-expanded="true"
+                                    aria-controls="question-21">
+                                    <th scope="col" colspan="2" class="gqm">Q21) Does an actor have too many
+                                        dependencies in the model?
+                                        <i class="fas fa-angle-down"></i></th>
+                                </tr>
+                                </thead>
+                                <tbody id="question-21" class="collapse">
+                                <tr>
+                                    <th scope="row" style="width:15%">Symptom</th>
+                                    <td>An actor has an unusually high number of incoming dependencies.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Potential problem</th>
+                                    <td>If too many actors depend on a particular actor, changes in this actor may have
+                                        ripple effects through the other actors. This potentially reduces the
+                                        maintainability of a system.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Suggested action</th>
+                                    <td class="withBorder">This actor may be a good candidate for further scrutiny.
+                                        Consider balancing the number of outgoing and incoming dependencies among
+                                        actors. If there are no outliers, the dependencies are probably well balanced.
+                                    </td>
+                                </tr>
+                                <tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>PID</b> – <b>P</b>ercentage of <b>I</b>ncoming <b>D</b>ependencies</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Percentage of incoming dependencies of an actor in the SD/SR model</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Formal definition</th>
+                                    <td class="codeOCL">
+                                        context Actor::PID() <br/>
+                                        pre:self.ND() > 0 <br/> <br/>
+
+                                        context Actor <br/>
+                                        def:PID():Double = self.NID() / self.ND()
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Requires</th>
+                                    <td class="withBorder">
+                                        <b>NID</b> – <b>N</b>umber of <b>I</b>ncoming <b>D</b>ependencies <br/>
+                                        <b>ND</b> – <b>N</b>umber of <b>D</b>ependencies
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-sm table-striped">
+                                <thead class="bg-info">
+                                <tr data-toggle="collapse" data-target="#question-22" aria-expanded="true"
+                                    aria-controls="question-22">
+                                    <th scope="col" colspan="2" class="gqm">Q22) Is there a variation in the average
+                                        complexity of the different types of actors?
+                                        <i class="fas fa-angle-down"></i></th>
+                                </tr>
+                                </thead>
+                                <tbody id="question-22" class="collapse">
+                                <tr>
+                                    <th scope="row" style="width:15%">Symptom</th>
+                                    <td>The actors from different types have a significantly different complexity. This
+                                        is observable by statistically comparing the distributions of complexity by
+                                        actor type.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Potential problem</th>
+                                    <td>It might be the case that a particular type of actor is frequently over- or
+                                        under-specified, which would reflect on the typical complexity of actors of that
+                                        type. On the other hand there might be a good reason for making a particular
+                                        actor type more (or less) complex than the other ones.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Suggested action</th>
+                                    <td class="withBorder">Consider comparing the average complexity of the different
+                                        actor types with the one found in other systems. If it is significantly
+                                        different, further investigate whether this results from the essential
+                                        complexity of the system, or from some accidental factor (such as over-, or
+                                        under-specification of the actors).
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>NEIAct</b> – <b>N</b>umber of <b>E</b>lements <b>I</b>nside an <b>Act</b>or
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Number of elements inside an actor’s boundary in the SR model</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Formal definition</th>
+                                    <td class="codeOCL">
+                                        context ISTAR <br/>
+                                        def:NEIAct():Integer = self.NEIAB() - <br/>
+                                        (self.NEIAgB() + self.NEIRB())
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Requires</th>
+                                    <td class="withBorder">
+                                        <b>NEIAB</b> – <b>N</b>umber of <b>E</b>lements <b>I</b>nside <b>A</b>ctors'
+                                        <b>B</b>oundaries <br/>
+                                        <b>NEIAgB</b> – <b>N</b>umber of <b>E</b>lements <b>I</b>nside <b>Ag</b>ents'
+                                        <b>B</b>oundaries <br/>
+                                        <b>NEIRB</b> – <b>N</b>umber of <b>E</b>lements <b>I</b>nside <b>R</b>oles' <b>B</b>oundaries
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>NEIAg</b> – <b>N</b>umber of <b>E</b>lements <b>I</b>nside an <b>Ag</b>ent
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Number of elements inside an agent's boundary in the SR model</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Formal definition</th>
+                                    <td class="codeOCL withBorder">
+                                        context Agent <br/>
+                                        def:NEIAg():Integer = self.hasElement -> <br/>
+                                        select(e:Element | e.oclIsKindOf(Element)) -> size()
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>NEIR</b> – <b>N</b>umber of <b>E</b>lements <b>I</b>nside a <b>R</b>ole</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Number of elements inside a role’s boundary in the SR model</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Formal definition</th>
+                                    <td class="codeOCL withBorder">
+                                        context Role <br/>
+                                        def:NEIR():Integer = self.hasElement -> <br/>
+                                        select(e:Element | e.oclIsKindOf(Element)) -> size ()
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed metricsLink" type="button" data-toggle="collapse"
+                                    data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                <b>iStar 2.0 completeness metrics</b>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                         data-parent="#accordioniStar2">
+                        <div class="card-body">
+                            <table class="table table-sm table-striped">
+                                <thead class="bg-info">
+                                <tr data-toggle="collapse" data-target="#question-23" aria-expanded="true"
+                                    aria-controls="question-23">
+                                    <th scope="col" colspan="2" class="gqm">Q23) How specific are the actors?
+                                        <i class="fas fa-angle-down"></i></th>
+                                </tr>
+                                </thead>
+                                <tbody id="question-23" class="collapse">
+                                <tr>
+                                    <th scope="row" style="width:15%">Symptom</th>
+                                    <td>This model uses a significantly different percentage of specific actors, when
+                                        compared to other models.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Potential problem</th>
+                                    <td>This may be a symptom of an insufficiently detailed system specification, or,
+                                        conversely, an over-specified one which may be difficult to understand.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Suggested action</th>
+                                    <td class="withBorder">Consider scrutinising the types of actors used in the
+                                        model and re-considering whether an actor should, or should not be defined using
+                                        a specific type.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>PSAct</b> – <b>P</b>ercentage of <b>S</b>pecific <b>Act</b>ors</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Percentage of actors with a specific type (agent or role).</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" >Formal definition</th>
+                                    <td class="codeOCL">
+                                        context ISTAR::PSAct() <br/>
+                                        pre:self.NAct() > 0 <br/><br/>
+
+                                        context ISTAR <br/>
+                                        def:PSAct():Double = (self.NAgents() + <br/>
+                                        self.NRoles()) / self.NAct ()
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Requires</th>
+                                    <td class="withBorder">
+                                        <b>NAgents</b> – <b>N</b>umber of <b>A</b>gents <br/>
+                                        <b>NRoles</b> – <b>N</b>umber of <b>R</b>oles <br/>
+                                        <b>NAct</b> – <b>N</b>umber of <b>A</b>ctors
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-sm table-striped">
+                                <thead class="bg-info">
+                                <tr data-toggle="collapse" data-target="#question-24" aria-expanded="true"
+                                    aria-controls="question-24">
+                                    <th scope="col" colspan="2" class="gqm">Q24) How detailed are the goals?
+                                        <i class="fas fa-angle-down"></i></th>
+                                </tr>
+                                </thead>
+                                <tbody id="question-24" class="collapse">
+                                <tr>
+                                    <th scope="row" style="width:15%">Symptom</th>
+                                    <td>An actor's goal has an unusually low number of decompositions.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Potential problem</th>
+                                    <td>The goal may be under-decomposed.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Suggested action</th>
+                                    <td class="withBorder">This goal may be a good candidate for further scrutiny.
+                                        Consider detailing this goal, if it is under-decomposed. If the actor has no
+                                        outlier goals, their detail is probably well balanced.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>PGWROQ</b> – <b>P</b>ercentage of <b>G</b>oals <b>W</b>ith <b>R</b>efinements
+                                        <b>O</b>r <b>Q</b>ualifications
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Percentage of goals with refinement (AND, OR) or qualification links</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Formal definition</th>
+                                    <td class="codeOCL">
+                                        context ISTAR::PGWROQ() <br/>
+                                        pre:self.NGIAB () > 0 <br/><br/>
+
+                                        context ISTAR <br/>
+                                        def:PGWROQ(): Double = (self.NGWD() + self.NGWQ()) / self.NGIAB()</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Requires</th>
+                                    <td class="withBorder">
+                                        <b>NGWD</b> – <b>N</b>umber of <b>G</b>oals <b>W</b>ith <b>D</b>ecompositions <br/>
+                                        <b>NGWQ</b> - <b>N</b>umber of <b>G</b>oals <b>W</b>ith <b>Q</b>ualifications <br/>
+                                        <b>NGIAB</b> – <b>N</b>umber of <b>G</b>oals <b>I</b>nside <b>A</b>ctors' <b>B</b>oundaries
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-sm table-striped">
+                                <thead class="bg-info">
+                                <tr data-toggle="collapse" data-target="#question-25" aria-expanded="true"
+                                    aria-controls="question-25">
+                                    <th scope="col" colspan="2" class="gqm">Q25) How detailed are the qualities?
+                                        <i class="fas fa-angle-down"></i></th>
+                                </tr>
+                                </thead>
+                                <tbody id="question-25" class="collapse">
+                                <tr>
+                                    <th scope="row" style="width:15%">Symptom</th>
+                                    <td>An actor's quality has an unusually low number of decompositions.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Potential problem</th>
+                                    <td>The quality may be under-decomposed.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Suggested action</th>
+                                    <td class="withBorder">This quality may be a good candidate for further scrutiny.
+                                        Consider detailing this quality, if it is under-decomposed. If the actor has no
+                                        outlier quality, their detail is probably well balanced.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>PQWCAQ</b> – <b>P</b>ercentage of <b>Q</b>ualities <b>W</b>ith <b>C</b>ontributions
+                                        <b>A</b>nd
+                                        <b>Q</b>ualifications
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Percentage of qualities with contribution or qualification links</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" >Formal definition</th>
+                                    <td class="codeOCL">
+                                        context ISTAR::PQWCAQ() <br/>
+                                        pre:self.NQIAB() > 0 <br/> <br/>
+
+                                        context ISTAR <br/>
+                                        def:PQWCAQ():Double = (self.NQWD() + self.NQWQ()) / self.NQIAB()
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Requires</th>
+                                    <td class="withBorder">
+                                        <b>NQWD</b> – <b>N</b>umber of <b>Q</b>ualities <b>W</b>ith <b>D</b>ecompositions <br/>
+                                        <b>NQWQ</b> - <b>N</b>umber of <b>Q</b>ualities <b>W</b>ith <b>Q</b>ualifications <br/>
+                                        <b>NSIAB</b> – <b>N</b>umber of <b>Q</b>ualities <b>I</b>nside <b>A</b>ctors' <b>B</b>oundaries
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-sm table-striped">
+                                <thead class="bg-info">
+                                <tr data-toggle="collapse" data-target="#question-26" aria-expanded="true"
+                                    aria-controls="question-26">
+                                    <th scope="col" colspan="2" class="gqm">Q26) How detailed is the SR model with
+                                        respect to its actors?
+                                        <i class="fas fa-angle-down"></i></th>
+                                </tr>
+                                </thead>
+                                <tbody id="question-26" class="collapse">
+                                <tr>
+                                    <th scope="row" style="width:15%">Symptom</th>
+                                    <td>The SR model has an unusually low percentage of actors with elements inside its
+                                        boundary.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Potential problem</th>
+                                    <td>The actors specification may be over-simplistic.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Suggested action</th>
+                                    <td class="withBorder">Those actors may be good candidates for further scrutiny.
+                                        Consider adding and/or detailing elements inside their boundaries. If the system
+                                        has no outliers, the SR model is probably defined with the typical amount of
+                                        details, with respect to the elements inside actors boundaries.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>PAWEI</b> – <b>P</b>ercentage of <b>A</b>ctors <b>W</b>ith <b>E</b>lements
+                                        <b>I</b>nside
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Percentage of actors with elements inside its boundary</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Formal definition</th>
+                                    <td class="codeOCL">
+                                        context ISTAR::PAWEI() <br/>
+                                        pre:self.NAct() > 0 <br/><br/>
+
+                                        context ISTAR <br/>
+                                        def:PAWEI():Double = self.NAWEI() / self.NAct()
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Requires</th>
+                                    <td class="withBorder">
+                                        <b>NAWEI</b> – <b>N</b>umber of <b>A</b>ctors <b>W</b>ith <b>E</b>lements <b>I</b>nside <br/>
+                                        <b>NAct</b> – <b>N</b>umber of <b>Act</b>ors
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-sm table-striped">
+                                <thead class="bg-info">
+                                <tr data-toggle="collapse" data-target="#question-27" aria-expanded="true"
+                                    aria-controls="question-27">
+                                    <th scope="col" colspan="2" class="gqm">Q27) How close are we to end the
+                                        assigment of responsibilities to an actor?
+                                        <i class="fas fa-angle-down"></i></th>
+                                </tr>
+                                </thead>
+                                <tbody id="question-27" class="collapse">
+                                <tr>
+                                    <th scope="row" style="width:15%">Symptom</th>
+                                    <td>The percentage of actors with unconnected elements inside their boundaries
+                                        represents the percentage of actors with an incomplete specification.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Potential problem</th>
+                                    <td> The system specification will not be complete, which can lead to problems in
+                                        its understandability. This may hamper the developers ability to faithfully
+                                        implement the system according to the intention of the requirements engineer,
+                                        because this intention is not documented with enough detail in the requirements
+                                        model.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Suggested action</th>
+                                    <td class="withBorder"> Consider completing the specification.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>PAWOUEI</b> – <b>P</b>ercentage of <b>A</b>ctors <b>W</b>ith<b>O</b>ut
+                                        <b>U</b>nconnected
+                                        <b>E</b>lements <b>I</b>nside
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Percentage of actors without unconnected elements inside its boundary</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Formal definition</th>
+                                    <td class="codeOCL">
+                                        context ISTAR <br/>
+                                        def:PAWOUEI():Double = 1 - self.PAWUEI()
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Requires</th>
+                                    <td class="withBorder">
+                                        <b>PAWUEI</b> – <b>P</b>ercentage of <b>A</b>ctors <b>W</b>ith <b>U</b>nconnected <b>E</b>lements
+                                            <b>I</b>nside
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-sm table-striped">
+                                <thead class="bg-info">
+                                <tr data-toggle="collapse" data-target="#question-28" aria-expanded="true"
+                                    aria-controls="question-28">
+                                    <th scope="col" colspan="2" class="gqm">Q28) How close are we to end the
+                                        assignment of links to the actors?
+                                        <i class="fas fa-angle-down"></i></th>
+                                </tr>
+                                </thead>
+                                <tbody id="question-28" class="collapse">
+                                <tr>
+                                    <th scope="row" style="width:15%">Symptom</th>
+                                    <td>The percentage of actors which are not connected to other elements in the
+                                        system.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Potential problem</th>
+                                    <td>The system specification will not be complete, which can lead to problems in its
+                                        understandability. In particular, the role of the actor in the system may become
+                                        unclear. This may hamper the developers ability to faithfully implement the
+                                        system according to the intention of the requirements engineer, because this
+                                        intention is not documented with enough detail in the requirements model.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Suggested action</th>
+                                    <td class="withBorder">Consider completing the specification by creating the
+                                        necessary associations between the actor and other model elements.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Metric</th>
+                                    <td><b>PAWDOA</b> – <b>P</b>ercentage of <b>A</b>ctors <b>W</b>ith <b>D</b>ependencies
+                                        <b>O</b>r <b>A</b>ssociations
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Informal definition</th>
+                                    <td>Percentage of actors with dependency or association links</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%">Formal definition</th>
+                                    <td class="codeOCL">
+                                        context ISTAR::PAWDOA() <br/>
+                                        pre:NAct() > 0  <br/>  <br/>
+
+                                        context ISTAR  <br/>
+                                        def:PAWDOA():Double = self.NAWDOA() / self.NAct()
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width:15%" class="withBorder">Requires</th>
+                                    <td class="withBorder">
+                                        <b>NAWDOA</b> – <b>N</b>umber of <b>A</b>ctors <b>W</b>ith <b>D</b>ependencies <b>O</b>r
+                                            <b>A</b>ssociations <br/>
+                                        <b>NAct</b> – <b>N</b>umber of <b>Act</b>ors
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingSix">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link metricsLink" type="button" data-toggle="collapse"
+                                    data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                <b>iStar 2.0 metamodel</b>
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                         data-parent="#accordioniStar2">
+                        <div class="card-body">
+
+                            <figure class="figure">
+                                <img src="../images/iStar2_metamodel.jpg" class="figure-img img-fluid rounded"
+                                     alt="iStar 2.0 metamodel">
+                            </figure>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<div class="tab-pane fade" id="pills-accuracy" role="tabpanel" aria-labelledby="pills-accuracy-tab">
+             accuracy
+         </div>-->
+        <!--<div class="tab-pane fade" id="pills-speed" role="tabpanel" aria-labelledby="pills-speed-tab">
+            speed
+        </div>-->
+        <!--<div class="tab-pane fade" id="pills-ease" role="tabpanel" aria-labelledby="pills-ease-tab">
+            ease
+        </div>-->
+        <!--<div class="tab-pane fade" id="pills-subjective" role="tabpanel" aria-labelledby="pills-subjective-tab">
+             subjective
+         </div>-->
+
+    </div>
+
+</div>
+</body>
+<!--- \ BODY --->
+
+
+</html>

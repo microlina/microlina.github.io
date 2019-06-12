@@ -1,0 +1,536 @@
+body {
+  font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji',
+  'Segoe UI Emoji','Segoe UI Symbol'; /* based on Bootstrap 4 font*/
+}
+
+#tool {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: auto;
+  width: 100vw;
+}
+
+#workspace {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  height:100%;
+  overflow: auto;
+  min-height: 1px;
+}
+
+#out {
+  background-color: lightgray;
+  flex-grow: 1;
+  overflow: auto;
+  min-height: 1px;
+  width: 70vw;
+  position: relative;
+  height: 100%;
+}
+
+#diagram {
+  overflow: auto;
+  min-height: 1px;
+  flex-shrink: 0;
+}
+
+.joint-marker-vertex {
+  fill: white;
+  r: 5;
+  stroke: #1C5052;
+}
+
+/* Hack to display scrollbars on Mac OS */
+/* based on
+https://stackoverflow.com/questions/7492062/css-overflow-scroll-always-show-vertical-scroll-bar
+*/
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1px;
+  background-color: #999;
+  border: 1px solid white;
+}
+
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+
+/*  Main Menu */
+
+.menu-bar {
+  align-items: stretch;
+  background-color: ghostwhite;
+  color: rgb(252, 255, 239);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.plugged {
+  background-color: #c27800;
+}
+
+#star {
+  margin-left: -5px;
+  margin-top: -10px;
+  transition-duration: .6s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+}
+
+/*nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}*/
+
+/*nav a,
+nav a:active,
+nav a:hover,
+nav a:link,
+nav a:visited {
+  color: #17a2b8;
+  text-decoration: none;
+}*/
+
+.options {
+  text-decoration: none;
+}
+
+.menu-item {
+  border: solid 2px ghostwhite;
+  color: rgb(252, 255, 239);
+  display: inline-block;
+  font-size: .97em;
+  padding: 2px 20px;
+}
+
+.menu-item.plugged {
+  border: solid 2px #c27800;
+  color: rgb(252, 255, 239);
+  display: inline-block;
+  font-size: .97em;
+  padding: 2px 20px;
+}
+
+#menu-item-plugin {
+  display: none;
+}
+
+.menu-item:hover {
+  border-top: solid 2px white;
+}
+
+.menu-item.active {
+  background-color: rgb(21, 26, 30);
+  border-bottom: 2px solid rgb(21, 26, 30);
+}
+
+.menu-body {
+  align-items: stretch;
+  background-color: #17a2b8;
+  color: rgb(252, 255, 239);
+  display: flex;
+  flex-direction: row;
+  font-size: .8em;
+  padding: 15px 3px 3px 3px;
+}
+
+.menu-group {
+  border-left: dashed 1px lightgrey;
+  display: flex;
+  flex-direction: column;
+  margin: 0 2px;
+  padding: 0 0 0 3px;
+  text-align: center;
+}
+
+.menu-group:first-child {
+  border: none;
+}
+
+.menu-group .title {
+  padding: 0;
+  text-align: center;
+}
+
+.button-horizontal {
+  align-items: center;
+  display: inline-flex;
+  padding: 0 4px 0 0;
+}
+
+.button-horizontal .glyphicon {
+  font-size: 1.2em;
+  margin: 1px 3px 3px;
+}
+
+.button-horizontal:active:focus {
+  margin-bottom: -2px;
+  margin-right: -2px;
+}
+
+.button-vertical {
+  padding: 4px 4px 0 4px;
+  font-size: 1.1em;
+}
+
+.button-vertical .glyphicon {
+  font-size: 1.8em;
+}
+
+input,
+button {
+  color: black;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.btn-default.active,
+.btn-default.active.focus,
+.btn-default:active,
+.btn-default.active:hover,
+.btn-default.active.focus:hover,
+.btn-default:active:hover {
+  background-color: #b1b1b1;
+  box-shadow: none;
+  color: black;
+}
+
+.menu-line {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2px;
+}
+
+.add-button.btn {
+  font-size: 1em;
+  margin: 0;
+  padding: 3px;
+}
+
+.add-button,
+.add-dropdown-button {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+#menu-add {
+  flex-wrap: wrap;
+}
+
+.line-break {
+  width: 100%;
+}
+
+#status {
+  font-size: 1.2em;
+  margin-left: 3em;
+}
+
+.jscolor {
+  border: 1px solid darkgrey;
+}
+
+#placeholder-save-model a {
+  color: black;
+  text-decoration: none;
+}
+
+kbd {
+  /* based on Bootstrap's style */
+  background-color: #333;
+  border-radius: 3px;
+  color: white;
+  font-size: 90%;
+  padding: 2px 4px;
+}
+
+.waiting {
+  cursor: wait !important;
+}
+
+/* JointJS markup */
+
+.remove-element {
+  cursor: pointer;
+}
+
+.remove-element circle {
+  fill: grey;
+}
+
+.remove-element path {
+  fill: white;
+}
+
+.link-tools .tool-remove circle {
+  fill: grey;
+}
+
+.tool-options {
+  display: none;
+}
+
+/* Sidepanel */
+
+#sidepanel {
+  background-color: white;
+  box-shadow: 0 4px 10px rgb(100,100,100);
+  font-size: 1.5rem;
+  min-height: 1px;
+  overflow-x: auto;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  transition: width 0.5s, height 0.3s ease-in-out;
+  z-index: 1;
+  height: 100%;
+}
+
+/*#sidepanel.size1 {
+  width: 2vw;
+}*/
+
+#sidepanel.size2 {
+  width: 16vw;
+}
+
+/*#sidepanel.size3 {
+  width: 30vw;
+}*/
+
+#sidepanel .nav {
+  background-color: #f5f5f5;
+}
+
+.nav li a {
+  /* inside of the tabs menu */
+  color: #555;
+  margin-top: 5px;
+  padding: 2px 5px;
+}
+
+.sidepanel-content {
+  padding: 5px;
+}
+
+#properties-table {
+  margin-bottom: 0;
+}
+
+.editable-click, a.editable-click {
+  border: none;
+}
+
+.property-name {
+  width: 20%;
+}
+
+#properties-table textarea {
+  font-size: 1.2rem;
+  padding: 3px; /* sets the padding inside the textarea */
+  width: 100%!important;
+}
+
+#properties-table .editable-container, .editable-container div{
+  width: 100%;
+}
+
+#properties-table .form-control {
+  height: auto;
+  padding: 0;
+}
+
+.sidepanel-title {
+  background-color: #f0f0f0;
+  margin-top: 10px;
+}
+
+#properties-table tr {
+  border: solid 2px white; /* hack to hide the table lines */
+}
+
+#properties-table td {
+  padding: 0;
+}
+
+#properties-table th {
+  padding: 0 5px 0 0;
+}
+
+#cell-actions a {
+  margin-top: 3px;
+}
+
+/*   Sidepanel resizing  */
+#regular-size-options {
+  float: right;
+  font-size: 1.7rem;
+  font-weight: 900;
+  padding: 0 5px;
+  transition: opacity 0.25s ease-in-out;
+}
+
+#sidepanel:not(.collapsed) #regular-size-options {
+  opacity: 0.0;
+}
+
+#regular-size-options a {
+  color: #246B29;
+  text-decoration: none;
+}
+
+.collapsed #regular-size-options {
+  display: none;
+}
+#sidepanel.collapsed #regular-size-options {
+  padding: 0;
+}
+
+#sidepanel.collapsed {
+  overflow: hidden;
+}
+
+
+.collapsed .collapsed-size-options-area {
+  display: block;
+  min-height: 1500px; /* hack to make the button fill the entire sidepanel */
+  min-width: 500px;   /* hack to make the button fill the entire sidepanel */
+  text-align: left;
+}
+
+#sidepanel:not(.collapsed) #collapsed-size-options {
+  display: none;
+}
+
+#collapsed-size-options-button {
+  display: block;
+  font-size: 1.7rem;
+  font-weight: 900;
+  text-align: center;
+  width: 2vw;
+}
+
+#collapsed-size-options-button a{
+  color: #246B29;
+  text-decoration: none;
+}
+
+.full .uncollapsed-expand-sidepanel-button {
+  display: none;
+}
+
+.collapsed .sidepanel-content, .collapsed  ul {
+  display: none;
+}
+#sidepanel:hover #regular-size-options {
+  opacity: 1.0;
+}
+
+
+
+/*   Element resizing */
+#resize-handle {
+  background: white;
+  border: 2px solid #1C5052;
+  border-radius: 50%;
+  cursor: nwse-resize;
+  height: 10px;
+  position: absolute;
+  width: 10px;
+  z-index: 2;
+}
+
+.element-selection {
+  border: 2px dashed grey;
+  height: 0;
+  pointer-events: none;  /* based on https://stackoverflow.com/questions/3538489/html-css-make-a-div-invisible-to-clicks */
+  position: absolute;
+  width: 0;
+  z-index: 1;
+}
+
+.flash-on {
+  background-color: #246B29;
+}
+.flash-off {
+  transition: background-color .3s ease-out;
+}
+
+.tool-block {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.question-block {
+  background-color: #f8f9fa;
+  height: 1065px;
+  padding-left: 0px;
+}
+
+.question {
+  text-align: justify;
+  font-size: 1.6rem;
+  padding-left: 30px;
+  padding-right: 5px;
+
+}
+
+.question-header {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.btn-question{
+  display:inline-block;
+  font-weight:400;
+  text-align:center;
+  white-space:nowrap;
+  vertical-align:middle;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  border:1px solid transparent;
+  padding:.375rem .75rem;
+  font-size:1.5rem;
+  border-radius:.26rem;
+  transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+
+.btn-question:focus,.btn-question:hover{text-decoration:none}
+
+a.btn.disabled,fieldset:disabled a.btn{pointer-events:none}
+
+.btn-info{
+  color:#fff;
+  background-color:#17a2b8;
+  border-color:#17a2b8
+}
+
+.btn-info:hover{
+  color:#fff;
+  background-color:#138496;
+  border-color:#117a8b
+}
+
+.btn-info.focus,.btn-info:focus{box-shadow:0 0 0 .2rem rgba(23,162,184,.5)}
+
+.btn-info.disabled,.btn-info:disabled{color:#fff;background-color:#17a2b8;border-color:#17a2b8}
+
+.btn-info:not(:disabled):not(.disabled).active,.btn-info:not(:disabled):not(.disabled):active,.show>.btn-info.dropdown-toggle{color:#fff;background-color:#117a8b;border-color:#10707f}
+
+.btn-info:not(:disabled):not(.disabled).active:focus,.btn-info:not(:disabled):not(.disabled):active:focus,.show>.btn-info.dropdown-toggle:focus{box-shadow:0 0 0 .2rem rgba(23,162,184,.5)}
