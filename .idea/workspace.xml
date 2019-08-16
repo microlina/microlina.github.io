@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b0fbc45-8ab1-4f48-93e3-c8f8ff3431b4" name="Default Changelist" comment="" />
+    <list default="true" id="6b0fbc45-8ab1-4f48-93e3-c8f8ff3431b4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Framework/experiments/useCasesARNE/templateARNEModification/question.html" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/experiments/useCasesARNE/templateARNEModification/question.html" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -14,27 +17,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4320">
-              <caret line="240" column="19" selection-start-line="240" selection-start-column="19" selection-end-line="240" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/activities.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2682">
-              <caret line="149" column="19" selection-start-line="149" selection-start-column="19" selection-end-line="149" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contact.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
+            <state relative-caret-position="238">
               <caret line="14" column="34" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="34" />
             </state>
           </provider>
@@ -53,7 +38,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/publications.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2682">
+            <state relative-caret-position="2533">
               <caret line="293" column="23" selection-start-line="293" selection-start-column="23" selection-end-line="293" selection-end-column="23" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#section#0;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -105,7 +90,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/research.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5742">
+            <state relative-caret-position="5423">
               <caret line="319" column="23" selection-start-line="319" selection-start-column="23" selection-end-line="319" selection-end-column="23" />
             </state>
           </provider>
@@ -114,7 +99,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/teaching.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="628">
+            <state relative-caret-position="2669">
               <caret line="157" column="22" selection-start-line="157" selection-start-column="22" selection-end-line="157" selection-end-column="22" />
             </state>
           </provider>
@@ -123,8 +108,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Framework/experiments/useCasesALCO/templateALCOCreation/question.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="63" column="114" selection-start-line="63" selection-start-column="114" selection-end-line="63" selection-end-column="114" />
+            <state relative-caret-position="731">
+              <caret line="43" column="120" selection-start-line="43" selection-start-column="120" selection-end-line="43" selection-end-column="120" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Framework/experiments/useCasesARNE/templateARNECreation/question.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Framework/experiments/useCasesARNE/templateARNEModification/question.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="43" column="128" selection-start-line="43" selection-start-column="128" selection-end-line="43" selection-end-column="128" />
             </state>
           </provider>
         </entry>
@@ -132,8 +135,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Framework/experiments/useCasesALCO/templateALCOModification/question.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="68" column="85" selection-start-line="68" selection-start-column="85" selection-end-line="68" selection-end-column="85" />
+            <state relative-caret-position="193">
+              <caret line="43" column="128" selection-start-line="43" selection-start-column="128" selection-end-line="43" selection-end-column="128" />
             </state>
           </provider>
         </entry>
@@ -161,15 +164,17 @@
         <option value="$PROJECT_DIR$/research.html" />
         <option value="$PROJECT_DIR$/teaching.html" />
         <option value="$PROJECT_DIR$/Framework/experiments/useCasesALCO/templateALCOCreation/question.html" />
+        <option value="$PROJECT_DIR$/Framework/experiments/useCasesARNE/templateARNECreation/question.html" />
+        <option value="$PROJECT_DIR$/Framework/experiments/useCasesARNE/templateARNEModification/question.html" />
         <option value="$PROJECT_DIR$/Framework/experiments/useCasesALCO/templateALCOModification/question.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-12" />
-    <option name="y" value="-12" />
-    <option name="width" value="3226" />
-    <option name="height" value="1746" />
+    <option name="x" value="-14" />
+    <option name="y" value="-14" />
+    <option name="width" value="3229" />
+    <option name="height" value="1749" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -191,19 +196,6 @@
             <path>
               <item name="microlina.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="microlina.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="microlina.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="microlina.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-              <item name="gallery" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="microlina.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="microlina.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="Framework" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -218,14 +210,6 @@
               <item name="Framework" type="462c0819:PsiDirectoryNode" />
               <item name="experiments" type="462c0819:PsiDirectoryNode" />
               <item name="useCasesALCO" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="microlina.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="microlina.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="Framework" type="462c0819:PsiDirectoryNode" />
-              <item name="experiments" type="462c0819:PsiDirectoryNode" />
-              <item name="useCasesALCO" type="462c0819:PsiDirectoryNode" />
-              <item name="templateALCOCreation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="microlina.github.io" type="b2602c69:ProjectViewProjectNode" />
@@ -234,6 +218,21 @@
               <item name="experiments" type="462c0819:PsiDirectoryNode" />
               <item name="useCasesALCO" type="462c0819:PsiDirectoryNode" />
               <item name="templateALCOModification" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="microlina.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="microlina.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="Framework" type="462c0819:PsiDirectoryNode" />
+              <item name="experiments" type="462c0819:PsiDirectoryNode" />
+              <item name="useCasesARNE" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="microlina.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="microlina.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="Framework" type="462c0819:PsiDirectoryNode" />
+              <item name="experiments" type="462c0819:PsiDirectoryNode" />
+              <item name="useCasesARNE" type="462c0819:PsiDirectoryNode" />
+              <item name="templateARNEModification" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -281,6 +280,8 @@
       <workItem from="1560341768091" duration="387000" />
       <workItem from="1560347564841" duration="413000" />
       <workItem from="1560765568591" duration="85000" />
+      <workItem from="1565950660375" duration="184000" />
+      <workItem from="1565952334157" duration="106000" />
     </task>
     <task id="LOCAL-00001" summary="Updating the year to 2019 and corrections in the code">
       <created>1546507235391</created>
@@ -338,17 +339,24 @@
       <option name="project" value="LOCAL" />
       <updated>1560765638807</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Changing the &quot;shall&quot; to &quot;if&quot; in the creation tasks of use cases">
+      <created>1565950712531</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1565950712531</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5746000" />
+    <option name="totallyTimeSpent" value="6036000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="1842" height="1002" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14330874" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14285715" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -381,26 +389,27 @@
     <MESSAGE value="Added the CV file" />
     <MESSAGE value="Added the usability evaluation framework" />
     <MESSAGE value="Changing the definition of the main success scenario on ALCO" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changing the definition of the main success scenario on ALCO" />
+    <MESSAGE value="Changing the &quot;shall&quot; to &quot;if&quot; in the creation tasks of use cases" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changing the &quot;shall&quot; to &quot;if&quot; in the creation tasks of use cases" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4320">
+        <state relative-caret-position="4080">
           <caret line="240" column="19" selection-start-line="240" selection-start-column="19" selection-end-line="240" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/activities.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2682">
+        <state relative-caret-position="2533">
           <caret line="149" column="19" selection-start-line="149" selection-start-column="19" selection-end-line="149" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/contact.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
+        <state relative-caret-position="238">
           <caret line="14" column="34" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="34" />
         </state>
       </provider>
@@ -413,7 +422,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/publications.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2682">
+        <state relative-caret-position="2533">
           <caret line="293" column="23" selection-start-line="293" selection-start-column="23" selection-end-line="293" selection-end-column="23" />
           <folding>
             <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#section#0;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -463,29 +472,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/research.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5742">
+        <state relative-caret-position="5423">
           <caret line="319" column="23" selection-start-line="319" selection-start-column="23" selection-end-line="319" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/teaching.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="628">
+        <state relative-caret-position="2669">
           <caret line="157" column="22" selection-start-line="157" selection-start-column="22" selection-end-line="157" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Framework/experiments/useCasesALCO/templateALCOCreation/question.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="63" column="114" selection-start-line="63" selection-start-column="114" selection-end-line="63" selection-end-column="114" />
+        <state relative-caret-position="731">
+          <caret line="43" column="120" selection-start-line="43" selection-start-column="120" selection-end-line="43" selection-end-column="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Framework/experiments/useCasesARNE/templateARNECreation/question.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Framework/experiments/useCasesARNE/templateARNEModification/question.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="43" column="128" selection-start-line="43" selection-start-column="128" selection-end-line="43" selection-end-column="128" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Framework/experiments/useCasesALCO/templateALCOModification/question.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="68" column="85" selection-start-line="68" selection-start-column="85" selection-end-line="68" selection-end-column="85" />
+        <state relative-caret-position="193">
+          <caret line="43" column="128" selection-start-line="43" selection-start-column="128" selection-end-line="43" selection-end-column="128" />
         </state>
       </provider>
     </entry>
