@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6b0fbc45-8ab1-4f48-93e3-c8f8ff3431b4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/experiments/iStar1.0/creation/iStarLab1.0/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/experiments/iStar1.0/creation/iStarLab1.0/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Framework/experiments/iStar2.0/creation/iStarLab2.0/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/experiments/iStar2.0/creation/iStarLab2.0/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -93,8 +92,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Framework/experiments/iStar2.0/creation/iStarLab2.0/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
+            <state relative-caret-position="178">
+              <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -270,7 +269,7 @@
       <workItem from="1566197851300" duration="3000" />
       <workItem from="1566319082008" duration="751000" />
       <workItem from="1566373745447" duration="1811000" />
-      <workItem from="1566469438432" duration="287000" />
+      <workItem from="1566469438432" duration="341000" />
     </task>
     <task id="LOCAL-00001" summary="Updating the year to 2019 and corrections in the code">
       <created>1546507235391</created>
@@ -342,17 +341,24 @@
       <option name="project" value="LOCAL" />
       <updated>1566319179623</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Hotjar for creation tasks on i*">
+      <created>1566469746923</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1566469746923</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8888000" />
+    <option name="totallyTimeSpent" value="8942000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1842" height="1002" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14285715" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14285715" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -365,7 +371,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32974428" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32974428" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3295063" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -387,7 +393,8 @@
     <MESSAGE value="Changing the definition of the main success scenario on ALCO" />
     <MESSAGE value="Changing the &quot;shall&quot; to &quot;if&quot; in the creation tasks of use cases" />
     <MESSAGE value="Changing the homepage" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changing the homepage" />
+    <MESSAGE value="Hotjar for creation tasks on i*" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hotjar for creation tasks on i*" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
@@ -538,8 +545,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Framework/experiments/iStar2.0/creation/iStarLab2.0/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
+        <state relative-caret-position="178">
+          <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
         </state>
       </provider>
     </entry>
