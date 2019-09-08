@@ -19,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/statistics/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="65" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
+            <state relative-caret-position="187">
+              <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -69,8 +69,8 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-14" />
     <option name="y" value="-14" />
-    <option name="width" value="3238" />
-    <option name="height" value="1757" />
+    <option name="width" value="3240" />
+    <option name="height" value="1759" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -147,7 +147,8 @@
       <workItem from="1566319082008" duration="751000" />
       <workItem from="1566373745447" duration="1811000" />
       <workItem from="1566469438432" duration="711000" />
-      <workItem from="1567965855988" duration="557000" />
+      <workItem from="1567965855988" duration="834000" />
+      <workItem from="1567966883987" duration="99000" />
     </task>
     <task id="LOCAL-00001" summary="Updating the year to 2019 and corrections in the code">
       <created>1546507235391</created>
@@ -282,11 +283,25 @@
       <option name="project" value="LOCAL" />
       <updated>1567966381798</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Statistics pdfs">
+      <created>1567966425280</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1567966425280</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Statistics pdfs">
+      <created>1567966538965</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1567966538965</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9869000" />
+    <option name="totallyTimeSpent" value="10245000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -338,7 +353,8 @@
     <MESSAGE value="Changing the homepage" />
     <MESSAGE value="Hotjar for creation tasks on i*" />
     <MESSAGE value="Folder for statistics" />
-    <option name="LAST_COMMIT_MESSAGE" value="Folder for statistics" />
+    <MESSAGE value="Statistics pdfs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Statistics pdfs" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/activities.html">
@@ -496,8 +512,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/statistics/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="65" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
+        <state relative-caret-position="187">
+          <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
         </state>
       </provider>
     </entry>
