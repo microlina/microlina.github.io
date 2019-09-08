@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6b0fbc45-8ab1-4f48-93e3-c8f8ff3431b4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistics/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/statistics/home.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,20 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/statistics/home.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="88" column="17" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
+              <caret line="8" column="65" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -70,8 +61,8 @@
         <option value="$PROJECT_DIR$/Framework/experiments/iStar1.0/creation/iStarLab1.0/index.html" />
         <option value="$PROJECT_DIR$/Framework/experiments/iStar2.0/creation/iStarLab2.0/index.html" />
         <option value="$PROJECT_DIR$/Framework/statistics/home.html" />
-        <option value="$PROJECT_DIR$/statistics/home.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/statistics/home.html" />
       </list>
     </option>
   </component>
@@ -156,7 +147,7 @@
       <workItem from="1566319082008" duration="751000" />
       <workItem from="1566373745447" duration="1811000" />
       <workItem from="1566469438432" duration="711000" />
-      <workItem from="1567965855988" duration="521000" />
+      <workItem from="1567965855988" duration="557000" />
     </task>
     <task id="LOCAL-00001" summary="Updating the year to 2019 and corrections in the code">
       <created>1546507235391</created>
@@ -284,11 +275,18 @@
       <option name="project" value="LOCAL" />
       <updated>1567966276178</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Folder for statistics">
+      <created>1567966381798</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1567966381798</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9833000" />
+    <option name="totallyTimeSpent" value="9869000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -303,7 +301,7 @@
     <frame x="-7" y="-7" width="1842" height="1002" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14285715" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24972315" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -489,17 +487,17 @@
     <entry file="file://$PROJECT_DIR$/Framework/about.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/statistics/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="88" column="17" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/statistics/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="65" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
         </state>
       </provider>
     </entry>
