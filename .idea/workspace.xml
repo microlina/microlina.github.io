@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b0fbc45-8ab1-4f48-93e3-c8f8ff3431b4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/experiments/iStar2.0/creation/iStarLab2.0/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/experiments/iStar2.0/creation/iStarLab2.0/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="6b0fbc45-8ab1-4f48-93e3-c8f8ff3431b4" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -93,7 +90,7 @@
         <entry file="file://$PROJECT_DIR$/Framework/experiments/iStar2.0/creation/iStarLab2.0/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="178">
-              <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+              <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -133,8 +130,8 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-14" />
     <option name="y" value="-14" />
-    <option name="width" value="3236" />
-    <option name="height" value="1756" />
+    <option name="width" value="3238" />
+    <option name="height" value="1757" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -269,7 +266,7 @@
       <workItem from="1566197851300" duration="3000" />
       <workItem from="1566319082008" duration="751000" />
       <workItem from="1566373745447" duration="1811000" />
-      <workItem from="1566469438432" duration="341000" />
+      <workItem from="1566469438432" duration="711000" />
     </task>
     <task id="LOCAL-00001" summary="Updating the year to 2019 and corrections in the code">
       <created>1546507235391</created>
@@ -348,11 +345,18 @@
       <option name="project" value="LOCAL" />
       <updated>1566469746923</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Hotjar for creation tasks on i*">
+      <created>1566469785694</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1566469785694</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8942000" />
+    <option name="totallyTimeSpent" value="9312000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1842" height="1002" extended-state="6" />
@@ -546,7 +550,7 @@
     <entry file="file://$PROJECT_DIR$/Framework/experiments/iStar2.0/creation/iStarLab2.0/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
-          <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+          <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
         </state>
       </provider>
     </entry>
