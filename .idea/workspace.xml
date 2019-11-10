@@ -89,7 +89,7 @@
       <workItem from="1569475977138" duration="449000" />
       <workItem from="1569476776877" duration="1201000" />
       <workItem from="1571904176108" duration="1291000" />
-      <workItem from="1573374164483" duration="632000" />
+      <workItem from="1573374164483" duration="1094000" />
     </task>
     <task id="LOCAL-00001" summary="Updating the year to 2019 and corrections in the code">
       <created>1546507235391</created>
@@ -266,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571905535212</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Statistics for i* and iStar 2.0 concrete syntaxes">
+      <created>1573374826292</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1573374826292</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TodoView">
@@ -300,6 +307,7 @@
     <MESSAGE value="RE 2019 paper, new CV, MDS for 2019/2020" />
     <MESSAGE value="Slides of the RE 2019 paper" />
     <MESSAGE value="New CV, update on activities" />
-    <option name="LAST_COMMIT_MESSAGE" value="New CV, update on activities" />
+    <MESSAGE value="Statistics for i* and iStar 2.0 concrete syntaxes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Statistics for i* and iStar 2.0 concrete syntaxes" />
   </component>
 </project>
