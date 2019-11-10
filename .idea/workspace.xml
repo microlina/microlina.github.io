@@ -4,6 +4,22 @@
     <list default="true" id="6b0fbc45-8ab1-4f48-93e3-c8f8ff3431b4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/statistics/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/statistics/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistics/iStar_descriptives_genderMag_informationprocessing.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistics/iStar_descriptives_genderMag_learningstyle.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistics/iStar_descriptives_genderMag_motivation.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistics/iStar_descriptives_genderMag_risk.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistics/iStar_descriptives_genderMag_selfefficacy.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistics/iStar_descriptives_notations.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistics/iStar_hypotheses_notation_creation.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistics/iStar_hypotheses_notation_modification.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistics/iStar_hypotheses_notation_reviewing.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistics/iStar_hypotheses_notation_understanding.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistics/iStar_normality_genderMag_informationprocessing.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistics/iStar_normality_genderMag_learningstyle.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistics/iStar_normality_genderMag_motivation.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistics/iStar_normality_genderMag_risk.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistics/iStar_normality_genderMag_selfefficacy.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistics/iStar_normality_notations.pdf" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +105,8 @@
       <workItem from="1569475977138" duration="449000" />
       <workItem from="1569476776877" duration="1201000" />
       <workItem from="1571904176108" duration="1291000" />
-      <workItem from="1573374164483" duration="1094000" />
+      <workItem from="1573374164483" duration="1361000" />
+      <workItem from="1573375574050" duration="901000" />
     </task>
     <task id="LOCAL-00001" summary="Updating the year to 2019 and corrections in the code">
       <created>1546507235391</created>
@@ -273,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573374826292</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="More statistics about the PhD experiments">
+      <created>1573375361417</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1573375361417</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TodoView">
@@ -308,6 +332,7 @@
     <MESSAGE value="Slides of the RE 2019 paper" />
     <MESSAGE value="New CV, update on activities" />
     <MESSAGE value="Statistics for i* and iStar 2.0 concrete syntaxes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Statistics for i* and iStar 2.0 concrete syntaxes" />
+    <MESSAGE value="More statistics about the PhD experiments" />
+    <option name="LAST_COMMIT_MESSAGE" value="More statistics about the PhD experiments" />
   </component>
 </project>
