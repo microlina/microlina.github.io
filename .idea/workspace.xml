@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6b0fbc45-8ab1-4f48-93e3-c8f8ff3431b4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activities.html" beforeDir="false" afterPath="$PROJECT_DIR$/activities.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistics/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/statistics/home.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +88,8 @@
       <workItem from="1569475578238" duration="35000" />
       <workItem from="1569475977138" duration="449000" />
       <workItem from="1569476776877" duration="1201000" />
-      <workItem from="1571904176108" duration="1196000" />
+      <workItem from="1571904176108" duration="1291000" />
+      <workItem from="1573374164483" duration="632000" />
     </task>
     <task id="LOCAL-00001" summary="Updating the year to 2019 and corrections in the code">
       <created>1546507235391</created>
@@ -258,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569476351789</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="New CV, update on activities">
+      <created>1571905535212</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1571905535212</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TodoView">
@@ -291,6 +299,7 @@
     <MESSAGE value="Statistics pdfs" />
     <MESSAGE value="RE 2019 paper, new CV, MDS for 2019/2020" />
     <MESSAGE value="Slides of the RE 2019 paper" />
-    <option name="LAST_COMMIT_MESSAGE" value="Slides of the RE 2019 paper" />
+    <MESSAGE value="New CV, update on activities" />
+    <option name="LAST_COMMIT_MESSAGE" value="New CV, update on activities" />
   </component>
 </project>
