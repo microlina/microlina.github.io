@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b0fbc45-8ab1-4f48-93e3-c8f8ff3431b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/statistics/iStar_gendermag_hypotheses.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/statistics/iStar_gendermag_hypotheses_modification.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/statistics/iStar_gendermag_hypotheses_reviewing.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/statistics/iStar_gendermag_hypotheses_understanding.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics/usecases_gendermag_hypotheses.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics/usecases_gendermag_hypotheses_creation.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics/usecases_gendermag_hypotheses_modification.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics/usecases_gendermag_hypotheses_reviewing.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics/usecases_gendermag_hypotheses_understanding.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/statistics/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/statistics/home.html" afterDir="false" />
     </list>
@@ -99,7 +100,7 @@
       <workItem from="1571904176108" duration="1291000" />
       <workItem from="1573374164483" duration="1361000" />
       <workItem from="1573375574050" duration="8027000" />
-      <workItem from="1573554070852" duration="6148000" />
+      <workItem from="1573554070852" duration="6765000" />
     </task>
     <task id="LOCAL-00001" summary="Updating the year to 2019 and corrections in the code">
       <created>1546507235391</created>
@@ -346,7 +347,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573558563317</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="More statistics about the PhD experiments">
+      <created>1573575502050</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1573575502050</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
