@@ -2,13 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b0fbc45-8ab1-4f48-93e3-c8f8ff3431b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/statistics/usecases_gendermag_hypotheses.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/statistics/usecases_gendermag_hypotheses_creation.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/statistics/usecases_gendermag_hypotheses_modification.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/statistics/usecases_gendermag_hypotheses_reviewing.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/statistics/usecases_gendermag_hypotheses_understanding.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics/iStar_gendermag_descriptives_creation.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics/iStar_gendermag_descriptives_modification.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics/iStar_gendermag_descriptives_reviewing.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics/iStar_gendermag_descriptives_understanding.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics/iStar_gendermag_normality_creation.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics/iStar_gendermag_normality_modification.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics/iStar_gendermag_normality_reviewing.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics/iStar_gendermag_normality_understanding.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics/iStar_usecases_gameshowell.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics/iStar_usecases_gameshowell_creation.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics/iStar_usecases_gameshowell_modification.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics/iStar_usecases_gameshowell_reviewing.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics/iStar_usecases_gameshowell_understanding.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics/iStar_usecases_hypotheses.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics/iStar_usecases_hypotheses_creation.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics/iStar_usecases_hypotheses_modification.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics/iStar_usecases_hypotheses_reviewing.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics/iStar_usecases_hypotheses_understanding.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics/iStar_usecases_levene.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics/iStar_usecases_levene_creation.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics/iStar_usecases_levene_modification.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics/iStar_usecases_levene_reviewing.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics/iStar_usecases_levene_understanding.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/statistics/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/statistics/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistics/iStar_gendermag_descriptives.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/statistics/iStar_gendermag_descriptives.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistics/iStar_gendermag_descriptives_informationprocessing.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistics/iStar_gendermag_descriptives_learningstyle.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistics/iStar_gendermag_descriptives_motivation.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistics/iStar_gendermag_descriptives_risk.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistics/iStar_gendermag_descriptives_selfefficacy.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistics/iStar_gendermag_normality.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/statistics/iStar_gendermag_normality.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistics/iStar_gendermag_normality_informationprocessing.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistics/iStar_gendermag_normality_learningstyle.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistics/iStar_gendermag_normality_motivation.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistics/iStar_gendermag_normality_risk.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistics/iStar_gendermag_normality_selfefficacy.pdf" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +130,7 @@
       <workItem from="1571904176108" duration="1291000" />
       <workItem from="1573374164483" duration="1361000" />
       <workItem from="1573375574050" duration="8027000" />
-      <workItem from="1573554070852" duration="6765000" />
+      <workItem from="1573554070852" duration="11442000" />
     </task>
     <task id="LOCAL-00001" summary="Updating the year to 2019 and corrections in the code">
       <created>1546507235391</created>
@@ -354,7 +384,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573575502050</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="More statistics about the PhD experiments">
+      <created>1573578041499</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1573578041500</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
