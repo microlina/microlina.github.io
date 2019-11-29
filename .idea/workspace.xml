@@ -92,7 +92,7 @@
       <workItem from="1571904176108" duration="1291000" />
       <workItem from="1573374164483" duration="1361000" />
       <workItem from="1573375574050" duration="8027000" />
-      <workItem from="1573554070852" duration="14191000" />
+      <workItem from="1573554070852" duration="14234000" />
     </task>
     <task id="LOCAL-00001" summary="Updating the year to 2019 and corrections in the code">
       <created>1546507235391</created>
@@ -367,7 +367,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573741033286</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="More statistics about the PhD experiments">
+      <created>1573741934501</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1573741934501</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
