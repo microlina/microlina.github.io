@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6b0fbc45-8ab1-4f48-93e3-c8f8ff3431b4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activities.html" beforeDir="false" afterPath="$PROJECT_DIR$/activities.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching.html" beforeDir="false" afterPath="$PROJECT_DIR$/teaching.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +103,8 @@
       <workItem from="1581671828027" duration="4300000" />
       <workItem from="1582026459642" duration="99000" />
       <workItem from="1583084167851" duration="3000" />
-      <workItem from="1583679366658" duration="1110000" />
+      <workItem from="1583679366658" duration="1686000" />
+      <workItem from="1586448732571" duration="4000" />
     </task>
     <task id="LOCAL-00001" summary="Updating the year to 2019 and corrections in the code">
       <created>1546507235391</created>
@@ -443,7 +442,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580767500971</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Adding some Reviewer and PC Member">
+      <created>1583680546562</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1583680546562</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -453,7 +459,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Adding ER 2018 slides and updating the publisher's website of RE 2018" />
     <MESSAGE value="Added TSE reviewer" />
     <MESSAGE value="Added the quality evaluation framework (working version)" />
     <MESSAGE value="Removed the quality evaluation framework. Added the CV" />
@@ -478,18 +483,19 @@
     <MESSAGE value="RE 2020 artifacts track" />
     <MESSAGE value="JOT and solving publications problems" />
     <MESSAGE value="JOT as reviewer, not PC Member" />
-    <option name="LAST_COMMIT_MESSAGE" value="JOT as reviewer, not PC Member" />
+    <MESSAGE value="Adding some Reviewer and PC Member" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding some Reviewer and PC Member" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="471" y="88" key="CommitChangelistDialog2" timestamp="1580767500238">
+    <state x="471" y="88" key="CommitChangelistDialog2" timestamp="1583680545255">
       <screen x="0" y="0" width="1829" height="989" />
     </state>
     <state x="471" y="88" key="CommitChangelistDialog2/0.0.1829.989/3200.0.1920.1040@0.0.1829.989" timestamp="1579539630151" />
-    <state x="471" y="88" key="CommitChangelistDialog2/0.0.1829.989@0.0.1829.989" timestamp="1580767500238" />
-    <state x="507" y="227" key="Vcs.Push.Dialog.v2" timestamp="1580767503175">
+    <state x="471" y="88" key="CommitChangelistDialog2/0.0.1829.989@0.0.1829.989" timestamp="1583680545255" />
+    <state x="507" y="227" key="Vcs.Push.Dialog.v2" timestamp="1583680548213">
       <screen x="0" y="0" width="1829" height="989" />
     </state>
     <state x="507" y="227" key="Vcs.Push.Dialog.v2/0.0.1829.989/3200.0.1920.1040@0.0.1829.989" timestamp="1579539635389" />
-    <state x="507" y="227" key="Vcs.Push.Dialog.v2/0.0.1829.989@0.0.1829.989" timestamp="1580767503175" />
+    <state x="507" y="227" key="Vcs.Push.Dialog.v2/0.0.1829.989@0.0.1829.989" timestamp="1583680548213" />
   </component>
 </project>
