@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b0fbc45-8ab1-4f48-93e3-c8f8ff3431b4" name="Default Changelist" comment="Adding some Reviewer and PC Member">
+    <list default="true" id="6b0fbc45-8ab1-4f48-93e3-c8f8ff3431b4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/activities.html" beforeDir="false" afterPath="$PROJECT_DIR$/activities.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publications.html" beforeDir="false" afterPath="$PROJECT_DIR$/publications.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,14 +112,8 @@
       <workItem from="1589099382569" duration="8000" />
       <workItem from="1589102917968" duration="6000" />
       <workItem from="1591698604329" duration="785000" />
-      <workItem from="1594196085961" duration="643000" />
-    </task>
-    <task id="LOCAL-00002" summary="Adding ER 2018 slides and updating the publisher's website of RE 2018">
-      <created>1546507772084</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1546507772084</updated>
+      <workItem from="1594196085961" duration="672000" />
+      <workItem from="1598633409084" duration="617000" />
     </task>
     <task id="LOCAL-00003" summary="Added TSE reviewer">
       <created>1546513597841</created>
@@ -456,7 +451,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588331357615</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Adding some Reviewer and PC Member">
+      <created>1594197226159</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1594197226160</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -494,13 +496,13 @@
     <option name="LAST_COMMIT_MESSAGE" value="Adding some Reviewer and PC Member" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="471" y="88" key="CommitChangelistDialog2" timestamp="1588331390522">
+    <state x="471" y="88" key="CommitChangelistDialog2" timestamp="1594197225127">
       <screen x="0" y="0" width="1829" height="989" />
     </state>
-    <state x="471" y="88" key="CommitChangelistDialog2/0.0.1829.989@0.0.1829.989" timestamp="1588331390522" />
-    <state x="507" y="227" key="Vcs.Push.Dialog.v2" timestamp="1588331404363">
+    <state x="471" y="88" key="CommitChangelistDialog2/0.0.1829.989@0.0.1829.989" timestamp="1594197225127" />
+    <state x="507" y="227" key="Vcs.Push.Dialog.v2" timestamp="1594197227668">
       <screen x="0" y="0" width="1829" height="989" />
     </state>
-    <state x="507" y="227" key="Vcs.Push.Dialog.v2/0.0.1829.989@0.0.1829.989" timestamp="1588331404363" />
+    <state x="507" y="227" key="Vcs.Push.Dialog.v2/0.0.1829.989@0.0.1829.989" timestamp="1594197227668" />
   </component>
 </project>
