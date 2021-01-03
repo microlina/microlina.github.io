@@ -4,7 +4,6 @@
     <list default="true" id="6b0fbc45-8ab1-4f48-93e3-c8f8ff3431b4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/activities.html" beforeDir="false" afterPath="$PROJECT_DIR$/activities.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/CV_CatarinaGralha.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/assets/CV_CatarinaGralha.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/publications.html" beforeDir="false" afterPath="$PROJECT_DIR$/publications.html" afterDir="false" />
@@ -122,21 +121,7 @@
       <workItem from="1599215391395" duration="692000" />
       <workItem from="1600780402815" duration="3000" />
       <workItem from="1605007090370" duration="31000" />
-      <workItem from="1609670003691" duration="906000" />
-    </task>
-    <task id="LOCAL-00004" summary="Added the quality evaluation framework (working version)">
-      <created>1548083961063</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1548083961063</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Removed the quality evaluation framework. Added the CV">
-      <created>1548175771572</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1548175771572</updated>
+      <workItem from="1609670003691" duration="1097000" />
     </task>
     <task id="LOCAL-00006" summary="Added the CV file">
       <created>1548175932754</created>
@@ -467,7 +452,21 @@
       <option name="project" value="LOCAL" />
       <updated>1598634082990</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Updating PC and year (2021)">
+      <created>1609672409406</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1609672409407</updated>
+    </task>
+    <task id="LOCAL-00054" summary="CV update">
+      <created>1609672539022</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1609672539022</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -477,8 +476,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added the quality evaluation framework (working version)" />
-    <MESSAGE value="Removed the quality evaluation framework. Added the CV" />
     <MESSAGE value="Added the CV file" />
     <MESSAGE value="Added the usability evaluation framework" />
     <MESSAGE value="Changing the definition of the main success scenario on ALCO" />
@@ -502,16 +499,18 @@
     <MESSAGE value="JOT as reviewer, not PC Member" />
     <MESSAGE value="Adding some Reviewer and PC Member" />
     <MESSAGE value="Adding some Reviewer, PC Member, and EMSE paper" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding some Reviewer, PC Member, and EMSE paper" />
+    <MESSAGE value="Updating PC and year (2021)" />
+    <MESSAGE value="CV update" />
+    <option name="LAST_COMMIT_MESSAGE" value="CV update" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="471" y="88" key="CommitChangelistDialog2" timestamp="1609672408455">
+    <state x="471" y="88" key="CommitChangelistDialog2" timestamp="1609672591006">
       <screen x="0" y="0" width="1829" height="989" />
     </state>
-    <state x="471" y="88" key="CommitChangelistDialog2/0.0.1829.989@0.0.1829.989" timestamp="1609672408455" />
-    <state x="507" y="227" key="Vcs.Push.Dialog.v2" timestamp="1609672411138">
+    <state x="471" y="88" key="CommitChangelistDialog2/0.0.1829.989@0.0.1829.989" timestamp="1609672591006" />
+    <state x="507" y="227" key="Vcs.Push.Dialog.v2" timestamp="1609672540557">
       <screen x="0" y="0" width="1829" height="989" />
     </state>
-    <state x="507" y="227" key="Vcs.Push.Dialog.v2/0.0.1829.989@0.0.1829.989" timestamp="1609672411138" />
+    <state x="507" y="227" key="Vcs.Push.Dialog.v2/0.0.1829.989@0.0.1829.989" timestamp="1609672540557" />
   </component>
 </project>
