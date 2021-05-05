@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b0fbc45-8ab1-4f48-93e3-c8f8ff3431b4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/papers/2020_Gralha_EMSE_Preprint.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activities.html" beforeDir="false" afterPath="$PROJECT_DIR$/activities.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/papers/Henriques2018Models.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/papers/Souza2019IST.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/publications.html" beforeDir="false" afterPath="$PROJECT_DIR$/publications.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/research.html" beforeDir="false" afterPath="$PROJECT_DIR$/research.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching.html" beforeDir="false" afterPath="$PROJECT_DIR$/teaching.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,21 +119,10 @@
       <workItem from="1599215391395" duration="692000" />
       <workItem from="1600780402815" duration="3000" />
       <workItem from="1605007090370" duration="31000" />
-      <workItem from="1609670003691" duration="1097000" />
-    </task>
-    <task id="LOCAL-00006" summary="Added the CV file">
-      <created>1548175932754</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1548175932754</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Added the usability evaluation framework">
-      <created>1560347813612</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1560347813612</updated>
+      <workItem from="1609670003691" duration="1790000" />
+      <workItem from="1617309214895" duration="356000" />
+      <workItem from="1619201321017" duration="60000" />
+      <workItem from="1620220198792" duration="204000" />
     </task>
     <task id="LOCAL-00008" summary="Changing the definition of the main success scenario on ALCO">
       <created>1560765638807</created>
@@ -466,7 +453,21 @@
       <option name="project" value="LOCAL" />
       <updated>1609672539022</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="CV update">
+      <created>1609672635921</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1609672635921</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Removing bitbucket link">
+      <created>1609672664338</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1609672664338</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -476,7 +477,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added the CV file" />
     <MESSAGE value="Added the usability evaluation framework" />
     <MESSAGE value="Changing the definition of the main success scenario on ALCO" />
     <MESSAGE value="Changing the &quot;shall&quot; to &quot;if&quot; in the creation tasks of use cases" />
@@ -501,16 +501,17 @@
     <MESSAGE value="Adding some Reviewer, PC Member, and EMSE paper" />
     <MESSAGE value="Updating PC and year (2021)" />
     <MESSAGE value="CV update" />
-    <option name="LAST_COMMIT_MESSAGE" value="CV update" />
+    <MESSAGE value="Removing bitbucket link" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removing bitbucket link" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="471" y="88" key="CommitChangelistDialog2" timestamp="1609672650605">
+    <state x="471" y="88" key="CommitChangelistDialog2" timestamp="1609672663639">
       <screen x="0" y="0" width="1829" height="989" />
     </state>
-    <state x="471" y="88" key="CommitChangelistDialog2/0.0.1829.989@0.0.1829.989" timestamp="1609672650605" />
-    <state x="507" y="227" key="Vcs.Push.Dialog.v2" timestamp="1609672637385">
+    <state x="471" y="88" key="CommitChangelistDialog2/0.0.1829.989@0.0.1829.989" timestamp="1609672663639" />
+    <state x="507" y="227" key="Vcs.Push.Dialog.v2" timestamp="1609672665551">
       <screen x="0" y="0" width="1829" height="989" />
     </state>
-    <state x="507" y="227" key="Vcs.Push.Dialog.v2/0.0.1829.989@0.0.1829.989" timestamp="1609672637385" />
+    <state x="507" y="227" key="Vcs.Push.Dialog.v2/0.0.1829.989@0.0.1829.989" timestamp="1609672665551" />
   </component>
 </project>
