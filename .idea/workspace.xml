@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b0fbc45-8ab1-4f48-93e3-c8f8ff3431b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/papers/2020_Gralha_EMSE_Preprint.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/papers/2021_Gralha_RE_Preprint.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/papers/Henriques2018Models.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/papers/Souza2019IST.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/publications.html" beforeDir="false" afterPath="$PROJECT_DIR$/publications.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teaching.html" beforeDir="false" afterPath="$PROJECT_DIR$/teaching.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,14 +122,8 @@
       <workItem from="1609670003691" duration="1790000" />
       <workItem from="1617309214895" duration="356000" />
       <workItem from="1619201321017" duration="60000" />
-      <workItem from="1620220198792" duration="204000" />
-    </task>
-    <task id="LOCAL-00008" summary="Changing the definition of the main success scenario on ALCO">
-      <created>1560765638807</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1560765638807</updated>
+      <workItem from="1620220198792" duration="911000" />
+      <workItem from="1627053242685" duration="408000" />
     </task>
     <task id="LOCAL-00009" summary="Changing the &quot;shall&quot; to &quot;if&quot; in the creation tasks of use cases">
       <created>1565950712531</created>
@@ -467,7 +461,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609672664338</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Adding preprint EMSE 2020">
+      <created>1620220448367</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1620220448368</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -477,7 +478,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added the usability evaluation framework" />
     <MESSAGE value="Changing the definition of the main success scenario on ALCO" />
     <MESSAGE value="Changing the &quot;shall&quot; to &quot;if&quot; in the creation tasks of use cases" />
     <MESSAGE value="Changing the homepage" />
@@ -502,16 +502,17 @@
     <MESSAGE value="Updating PC and year (2021)" />
     <MESSAGE value="CV update" />
     <MESSAGE value="Removing bitbucket link" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removing bitbucket link" />
+    <MESSAGE value="Adding preprint EMSE 2020" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding preprint EMSE 2020" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="471" y="88" key="CommitChangelistDialog2" timestamp="1609672663639">
+    <state x="298" y="74" key="CommitChangelistDialog2" timestamp="1620220447441">
       <screen x="0" y="0" width="1829" height="989" />
     </state>
-    <state x="471" y="88" key="CommitChangelistDialog2/0.0.1829.989@0.0.1829.989" timestamp="1609672663639" />
-    <state x="507" y="227" key="Vcs.Push.Dialog.v2" timestamp="1609672665551">
+    <state x="298" y="74" key="CommitChangelistDialog2/0.0.1829.989@0.0.1829.989" timestamp="1620220447441" />
+    <state x="511" y="231" key="Vcs.Push.Dialog.v2" timestamp="1620220450302">
       <screen x="0" y="0" width="1829" height="989" />
     </state>
-    <state x="507" y="227" key="Vcs.Push.Dialog.v2/0.0.1829.989@0.0.1829.989" timestamp="1609672665551" />
+    <state x="511" y="231" key="Vcs.Push.Dialog.v2/0.0.1829.989@0.0.1829.989" timestamp="1620220450302" />
   </component>
 </project>
