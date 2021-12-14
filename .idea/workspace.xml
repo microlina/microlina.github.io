@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b0fbc45-8ab1-4f48-93e3-c8f8ff3431b4" name="Default Changelist" comment="Adding preprint RE 2021">
+    <list default="true" id="6b0fbc45-8ab1-4f48-93e3-c8f8ff3431b4" name="Default Changelist" comment="Adding publisher for ER and RE 2021">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/publications.html" beforeDir="false" afterPath="$PROJECT_DIR$/publications.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activities.html" beforeDir="false" afterPath="$PROJECT_DIR$/activities.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,14 +136,7 @@
       <workItem from="1635859216127" duration="277000" />
       <workItem from="1636465476804" duration="1393000" />
       <workItem from="1636466902852" duration="29000" />
-      <workItem from="1639489775682" duration="178000" />
-    </task>
-    <task id="LOCAL-00010" summary="Changing the homepage">
-      <created>1566319179623</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1566319179623</updated>
+      <workItem from="1639489775682" duration="1746000" />
     </task>
     <task id="LOCAL-00011" summary="Hotjar for creation tasks on i*">
       <created>1566469746923</created>
@@ -481,7 +474,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627053719490</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Adding publisher for ER and RE 2021">
+      <created>1639490009336</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1639490009336</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -503,7 +503,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Changing the &quot;shall&quot; to &quot;if&quot; in the creation tasks of use cases" />
     <MESSAGE value="Changing the homepage" />
     <MESSAGE value="Hotjar for creation tasks on i*" />
     <MESSAGE value="Folder for statistics" />
@@ -528,6 +527,7 @@
     <MESSAGE value="Removing bitbucket link" />
     <MESSAGE value="Adding preprint EMSE 2020" />
     <MESSAGE value="Adding preprint RE 2021" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding preprint RE 2021" />
+    <MESSAGE value="Adding publisher for ER and RE 2021" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding publisher for ER and RE 2021" />
   </component>
 </project>
