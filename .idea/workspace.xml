@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6b0fbc45-8ab1-4f48-93e3-c8f8ff3431b4" name="Default Changelist" comment="Adding publisher for ER and RE 2021">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publications.html" beforeDir="false" afterPath="$PROJECT_DIR$/publications.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/teaching.html" beforeDir="false" afterPath="$PROJECT_DIR$/teaching.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -139,6 +140,7 @@
       <workItem from="1639489775682" duration="1977000" />
       <workItem from="1641148942134" duration="241000" />
       <workItem from="1645708479480" duration="430000" />
+      <workItem from="1658738039529" duration="616000" />
     </task>
     <task id="LOCAL-00011" summary="Hotjar for creation tasks on i*">
       <created>1566469746923</created>
