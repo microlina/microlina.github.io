@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b0fbc45-8ab1-4f48-93e3-c8f8ff3431b4" name="Default Changelist" comment="Updating activities and publications">
+    <list default="true" id="6b0fbc45-8ab1-4f48-93e3-c8f8ff3431b4" name="Default Changelist" comment="Adding DOI to REJ paper">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/publications.html" beforeDir="false" afterPath="$PROJECT_DIR$/publications.html" afterDir="false" />
     </list>
@@ -142,14 +142,8 @@
       <workItem from="1658738039529" duration="870000" />
       <workItem from="1659622343117" duration="20000" />
       <workItem from="1662455400483" duration="1993000" />
-      <workItem from="1663763582915" duration="100000" />
-    </task>
-    <task id="LOCAL-00013" summary="Folder for statistics">
-      <created>1567965899678</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1567965899679</updated>
+      <workItem from="1663763582915" duration="1068000" />
+      <workItem from="1666262162099" duration="894000" />
     </task>
     <task id="LOCAL-00014" summary="Folder for statistics">
       <created>1567965924839</created>
@@ -487,7 +481,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662456361449</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Adding DOI to REJ paper">
+      <created>1663763727526</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1663763727527</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -509,7 +510,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Folder for statistics" />
     <MESSAGE value="Statistics pdfs" />
     <MESSAGE value="RE 2019 paper, new CV, MDS for 2019/2020" />
     <MESSAGE value="Slides of the RE 2019 paper" />
@@ -534,6 +534,7 @@
     <MESSAGE value="Adding publisher for ER and RE 2021" />
     <MESSAGE value="Updating teaching and adding TOSEM 2022 paper" />
     <MESSAGE value="Updating activities and publications" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updating activities and publications" />
+    <MESSAGE value="Adding DOI to REJ paper" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding DOI to REJ paper" />
   </component>
 </project>
