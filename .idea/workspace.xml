@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b0fbc45-8ab1-4f48-93e3-c8f8ff3431b4" name="Default Changelist" comment="Adding DOI to REJ paper">
+    <list default="true" id="6b0fbc45-8ab1-4f48-93e3-c8f8ff3431b4" name="Default Changelist" comment="Adding COLA paper">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/publications.html" beforeDir="false" afterPath="$PROJECT_DIR$/publications.html" afterDir="false" />
     </list>
@@ -20,6 +20,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="1RMV5QRLdT4KzeCSfyOOeMmYxnN" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -28,19 +31,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="advanced.settings" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Catarina\Dropbox\Desenvolvimento\Website Profissional\microlina.github.io" />
@@ -143,14 +139,9 @@
       <workItem from="1659622343117" duration="20000" />
       <workItem from="1662455400483" duration="1993000" />
       <workItem from="1663763582915" duration="1068000" />
-      <workItem from="1666262162099" duration="894000" />
-    </task>
-    <task id="LOCAL-00014" summary="Folder for statistics">
-      <created>1567965924839</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1567965924839</updated>
+      <workItem from="1666262162099" duration="1583000" />
+      <workItem from="1667999685598" duration="19000" />
+      <workItem from="1668955606111" duration="432000" />
     </task>
     <task id="LOCAL-00015" summary="Folder for statistics">
       <created>1567966018103</created>
@@ -488,7 +479,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663763727527</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Adding COLA paper">
+      <created>1666264478022</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1666264478022</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -504,13 +502,11 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Statistics pdfs" />
     <MESSAGE value="RE 2019 paper, new CV, MDS for 2019/2020" />
     <MESSAGE value="Slides of the RE 2019 paper" />
     <MESSAGE value="New CV, update on activities" />
@@ -535,6 +531,7 @@
     <MESSAGE value="Updating teaching and adding TOSEM 2022 paper" />
     <MESSAGE value="Updating activities and publications" />
     <MESSAGE value="Adding DOI to REJ paper" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding DOI to REJ paper" />
+    <MESSAGE value="Adding COLA paper" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding COLA paper" />
   </component>
 </project>
