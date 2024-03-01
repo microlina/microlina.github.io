@@ -35,12 +35,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  }
-}</component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Catarina\Dropbox\Desenvolvimento\Website Profissional\microlina.github.io" />
@@ -147,7 +147,13 @@
       <workItem from="1667999685598" duration="19000" />
       <workItem from="1668955606111" duration="1101000" />
       <workItem from="1669023695848" duration="41000" />
-      <workItem from="1672249329364" duration="118000" />
+      <workItem from="1672249329364" duration="319000" />
+      <workItem from="1690146017209" duration="268000" />
+      <workItem from="1700318453234" duration="247000" />
+      <workItem from="1704220141596" duration="20000" />
+      <workItem from="1709307017143" duration="89000" />
+      <workItem from="1709307161767" duration="52000" />
+      <workItem from="1709307235881" duration="177000" />
     </task>
     <task id="LOCAL-00016" summary="Folder for statistics">
       <created>1567966126094</created>
