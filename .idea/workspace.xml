@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b0fbc45-8ab1-4f48-93e3-c8f8ff3431b4" name="Default Changelist" comment="Updating date to 2025">
+    <list default="true" id="6b0fbc45-8ab1-4f48-93e3-c8f8ff3431b4" name="Default Changelist" comment="Changing email address">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activities.html" beforeDir="false" afterPath="$PROJECT_DIR$/activities.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publications.html" beforeDir="false" afterPath="$PROJECT_DIR$/publications.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teaching.html" beforeDir="false" afterPath="$PROJECT_DIR$/teaching.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +27,23 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;microlina&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/microlina/microlina.github.io.git&quot;,
+    &quot;accountId&quot;: &quot;e50b7e49-1c63-4b17-aa20-4ccdfe02e2b5&quot;
+  }
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -37,19 +56,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Catarina\Dropbox\Desenvolvimento\Website Profissional\microlina.github.io" />
@@ -66,6 +90,13 @@
         </serviceView>
       </list>
     </option>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-c7e53b3be11b-JavaScript-WS-253.28294.332" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -168,7 +199,28 @@
       <workItem from="1709308247838" duration="162000" />
       <workItem from="1709308473155" duration="27000" />
       <workItem from="1709662305505" duration="12000" />
-      <workItem from="1735835791670" duration="949000" />
+      <workItem from="1735835791670" duration="1052000" />
+      <workItem from="1750949019703" duration="358000" />
+      <workItem from="1750949389416" duration="77000" />
+      <workItem from="1750949646989" duration="278000" />
+      <workItem from="1750949938977" duration="305000" />
+      <workItem from="1750950705158" duration="98000" />
+      <workItem from="1750950816599" duration="67000" />
+      <workItem from="1750951938503" duration="696000" />
+      <workItem from="1753194674981" duration="62000" />
+      <workItem from="1753194748983" duration="11000" />
+      <workItem from="1753453976633" duration="38000" />
+      <workItem from="1765875253711" duration="2950000" />
+      <workItem from="1765878531150" duration="1237000" />
+      <workItem from="1765879991956" duration="499000" />
+      <workItem from="1765880503090" duration="18000" />
+      <workItem from="1765897920927" duration="6808000" />
+      <workItem from="1765958754716" duration="947000" />
+      <workItem from="1766044009526" duration="14645000" />
+      <workItem from="1766164781167" duration="2538000" />
+      <workItem from="1766392281700" duration="476000" />
+      <workItem from="1766483682488" duration="7863000" />
+      <workItem from="1767360889835" duration="89000" />
     </task>
     <task id="LOCAL-00016" summary="Folder for statistics">
       <created>1567966126094</created>
@@ -513,7 +565,7 @@
       <option name="project" value="LOCAL" />
       <updated>1668956257817</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -534,7 +586,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="New CV, update on activities" />
     <MESSAGE value="Statistics for i* and iStar 2.0 concrete syntaxes" />
     <MESSAGE value="More statistics about the PhD experiments" />
     <MESSAGE value="Changes in RE 2019 pre print paper" />
@@ -559,6 +610,7 @@
     <MESSAGE value="Adding COLA paper" />
     <MESSAGE value="Adding DKE paper" />
     <MESSAGE value="Updating date to 2025" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updating date to 2025" />
+    <MESSAGE value="Changing email address" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changing email address" />
   </component>
 </project>
